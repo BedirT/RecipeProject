@@ -15,6 +15,8 @@
 		7E5AEDE11BDDD3510034A5E7 /* RecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AEDE01BDDD3510034A5E7 /* RecipesUITests.swift */; };
 		7E5AEDEF1BDDD37B0034A5E7 /* recipeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AEDEE1BDDD37B0034A5E7 /* recipeItems.swift */; };
 		F87519AD1BDE95480073A085 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87519AC1BDE95480073A085 /* main.storyboard */; };
+		F8D6AE9C1BDE9BF900FF7165 /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AE9B1BDE9BF900FF7165 /* checkBox.swift */; };
+		F8D6AE9E1BDE9F6C00FF7165 /* myFridgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AE9D1BDE9F6C00FF7165 /* myFridgePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7E5AEDE21BDDD3510034A5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5AEDEE1BDDD37B0034A5E7 /* recipeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeItems.swift; sourceTree = "<group>"; };
 		F87519AC1BDE95480073A085 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		F8D6AE9B1BDE9BF900FF7165 /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
+		F8D6AE9D1BDE9F6C00FF7165 /* myFridgePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myFridgePage.swift; path = RecipesTests/myFridgePage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 				F87519AC1BDE95480073A085 /* main.storyboard */,
 				7E5AEDC71BDDD3510034A5E7 /* Assets.xcassets */,
 				7E5AEDC91BDDD3510034A5E7 /* LaunchScreen.storyboard */,
+				F8D6AE9B1BDE9BF900FF7165 /* checkBox.swift */,
 				7E5AEDCC1BDDD3510034A5E7 /* Info.plist */,
 				7E5AEDEE1BDDD37B0034A5E7 /* recipeItems.swift */,
+				F8D6AE9D1BDE9F6C00FF7165 /* myFridgePage.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D6AE9C1BDE9BF900FF7165 /* checkBox.swift in Sources */,
 				7E5AEDC31BDDD3510034A5E7 /* ViewController.swift in Sources */,
 				7E5AEDC11BDDD3510034A5E7 /* AppDelegate.swift in Sources */,
 				7E5AEDEF1BDDD37B0034A5E7 /* recipeItems.swift in Sources */,
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E5AEDD61BDDD3510034A5E7 /* RecipesTests.swift in Sources */,
+				F8D6AE9E1BDE9F6C00FF7165 /* myFridgePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

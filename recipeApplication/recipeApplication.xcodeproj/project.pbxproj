@@ -14,6 +14,8 @@
 		F8D6AEB61BDEA9F600FF7165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D6AEB41BDEA9F600FF7165 /* LaunchScreen.storyboard */; };
 		F8D6AEC11BDEA9F600FF7165 /* recipeApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEC01BDEA9F600FF7165 /* recipeApplicationTests.swift */; };
 		F8D6AECC1BDEA9F600FF7165 /* recipeApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AECB1BDEA9F600FF7165 /* recipeApplicationUITests.swift */; };
+		F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */; };
+		F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F8D6AEC71BDEA9F600FF7165 /* recipeApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipeApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D6AECB1BDEA9F600FF7165 /* recipeApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeApplicationUITests.swift; sourceTree = "<group>"; };
 		F8D6AECD1BDEA9F600FF7165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeItems.swift; sourceTree = "<group>"; };
+		F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */,
 				F8D6AEB21BDEA9F600FF7165 /* Assets.xcassets */,
 				F8D6AEB41BDEA9F600FF7165 /* LaunchScreen.storyboard */,
+				F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */,
+				F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */,
 				F8D6AEB71BDEA9F600FF7165 /* Info.plist */,
 			);
 			path = recipeApplication;
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */,
 				F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */,
+				F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */,
 				F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				F8D6AED21BDEA9F600FF7165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D6AED31BDEA9F600FF7165 /* Build configuration list for PBXNativeTarget "recipeApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				F8D6AED51BDEA9F600FF7165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D6AED61BDEA9F600FF7165 /* Build configuration list for PBXNativeTarget "recipeApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				F8D6AED81BDEA9F600FF7165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

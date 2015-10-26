@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--mainPage-->
@@ -38,8 +37,10 @@
                                 <state key="normal" image="button_MyFridge"/>
                                 <connections>
                                     <action selector="button_MyFridge" destination="FuW-iC-FuN" eventType="touchUpInside" id="fZn-Yb-FyA"/>
-                                    <segue destination="fhs-K5-vcM" kind="push" id="2Zh-2t-aTs"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-96-WQ2" customClass="checkBox" customModule="Recipes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="349" width="30" height="30"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,69 +58,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zjr-xI-z4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="199"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kP4-i8-ScQ">
-            <objects>
-                <viewController id="fhs-K5-vcM" customClass="ViewController" customModule="Recipes" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nxv-o9-Jo0"/>
-                        <viewControllerLayoutGuide type="bottom" id="d91-zm-pMe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RME-vz-AI7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="r4b-GV-hCE">
-                                <rect key="frame" x="0.0" y="527" width="320" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="r4b-GV-hCE" secondAttribute="height" multiplier="320:41" id="hQR-xo-UlU"/>
-                                </constraints>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_myFridge" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-cC-4e5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="WAf-cC-4e5" secondAttribute="height" multiplier="322:121" id="h5F-v2-Qrl"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-Rt-Ibw">
-                                <rect key="frame" x="266" y="86" width="34" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="HeL-9o-PLq"/>
-                                </constraints>
-                                <state key="normal" image="button_GoBack2"/>
-                                <connections>
-                                    <segue destination="FuW-iC-FuN" kind="push" id="RLS-gJ-B3D"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Iyf-Rt-Ibw" firstAttribute="bottom" secondItem="WAf-cC-4e5" secondAttribute="bottom" id="4Xa-wi-key"/>
-                            <constraint firstItem="r4b-GV-hCE" firstAttribute="leading" secondItem="RME-vz-AI7" secondAttribute="leading" id="87r-vZ-uMs"/>
-                            <constraint firstAttribute="trailing" secondItem="WAf-cC-4e5" secondAttribute="trailing" id="DPO-b5-Dhd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Iyf-Rt-Ibw" secondAttribute="trailing" constant="4" id="GrJ-r2-6Yk"/>
-                            <constraint firstItem="WAf-cC-4e5" firstAttribute="top" secondItem="RME-vz-AI7" secondAttribute="top" id="HHf-gr-Vbp"/>
-                            <constraint firstItem="WAf-cC-4e5" firstAttribute="leading" secondItem="RME-vz-AI7" secondAttribute="leading" id="Ki0-gc-hpx"/>
-                            <constraint firstItem="d91-zm-pMe" firstAttribute="top" secondItem="r4b-GV-hCE" secondAttribute="bottom" id="OJ2-o8-ncB"/>
-                            <constraint firstAttribute="trailing" secondItem="r4b-GV-hCE" secondAttribute="trailing" id="bPN-B0-JxP"/>
-                            <constraint firstItem="Iyf-Rt-Ibw" firstAttribute="top" secondItem="Nxv-o9-Jo0" secondAttribute="bottom" constant="66" id="gHL-hy-ZZi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="xyQ-og-Lw5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hJB-37-GI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="691" y="212"/>
+            <point key="canvasLocation" x="195" y="7"/>
         </scene>
     </scenes>
     <resources>
-        <image name="button_GoBack2" width="223" height="223"/>
         <image name="button_MyFridge" width="582" height="70"/>
         <image name="downCover" width="641" height="84"/>
         <image name="midObject" width="641" height="253"/>
         <image name="upCover" width="641" height="304"/>
-        <image name="upCover_myFridge" width="641" height="240"/>
     </resources>
 </document>

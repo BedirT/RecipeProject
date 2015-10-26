@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="TGI-P7-zp0">
+            <objects>
+                <viewController id="8oM-24-1zt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f0Q-Ub-rrA"/>
+                        <viewControllerLayoutGuide type="bottom" id="iIM-5j-mM2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iea-C8-w3f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-FB-Xyz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U2l-FB-Xyz" secondAttribute="height" multiplier="40:19" id="Xsu-gs-Ma1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-da-aGg">
+                                <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cD9-da-aGg" secondAttribute="height" multiplier="321:41" id="j21-ho-lLC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-cJ-MVG">
+                                <rect key="frame" x="20" y="169" width="280" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hFj-cJ-MVG" secondAttribute="height" multiplier="141:17" id="hHZ-sP-qBJ"/>
+                                </constraints>
+                                <state key="normal" image="button_MyFridge"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="iIM-Tz-yWL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U2l-FB-Xyz" firstAttribute="top" secondItem="iea-C8-w3f" secondAttribute="top" id="1l7-Up-JOt"/>
+                            <constraint firstAttribute="trailing" secondItem="cD9-da-aGg" secondAttribute="trailing" id="Xx8-KN-4Lt"/>
+                            <constraint firstAttribute="trailing" secondItem="hFj-cJ-MVG" secondAttribute="trailing" constant="20" id="cO8-1m-gpt"/>
+                            <constraint firstItem="hFj-cJ-MVG" firstAttribute="top" secondItem="U2l-FB-Xyz" secondAttribute="bottom" constant="17" id="gLG-qg-eoD"/>
+                            <constraint firstItem="iIM-5j-mM2" firstAttribute="top" secondItem="cD9-da-aGg" secondAttribute="bottom" id="opc-qd-5C9"/>
+                            <constraint firstItem="hFj-cJ-MVG" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" constant="20" id="pdm-zU-DmP"/>
+                            <constraint firstItem="U2l-FB-Xyz" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" id="sZO-xk-YYg"/>
+                            <constraint firstAttribute="trailing" secondItem="U2l-FB-Xyz" secondAttribute="trailing" id="y16-tb-8Bb"/>
+                            <constraint firstItem="cD9-da-aGg" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" id="ykO-tI-bOc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mf2-dz-QE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="366"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,17 +71,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-Sn-cqW">
-                                <rect key="frame" x="137" y="105" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-fH-70a" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="135.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
+                                <rect key="frame" x="63" y="132.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
+                                <rect key="frame" x="63" y="175.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
+                                <rect key="frame" x="63" y="218.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
+                                <rect key="frame" x="63" y="261.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
+                                <rect key="frame" x="63" y="304.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-EH-XSa">
+                                <rect key="frame" x="63" y="347.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-4J-zwE">
+                                <rect key="frame" x="63" y="390.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Sc-47S">
+                                <rect key="frame" x="63" y="433.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-Xc-Yhs">
+                                <rect key="frame" x="63" y="476.5" width="237" height="36"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-tV-GmX">
+                                <rect key="frame" x="0.0" y="526" width="320" height="41.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ibh-tV-GmX" secondAttribute="height" multiplier="318:41" id="L2g-W0-mm8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_myFridge" translatesAutoresizingMaskIntoConstraints="NO" id="XA3-rd-GPn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XA3-rd-GPn" secondAttribute="height" multiplier="321:121" id="th4-DA-my3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-gF-SSy" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="178.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-hq-KD0" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="264.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-er-Xrr" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="307.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-7Q-n8y" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="221.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-CP-idX" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="350.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Xb-4vj" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="393.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJG-JC-NhS" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="479.5" width="29" height="30"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="436.5" width="29" height="29"/>
+                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-ZK-bya">
+                                <rect key="frame" x="270" y="88" width="30" height="30"/>
+                                <state key="normal" backgroundImage="button_GoBack2"/>
+                                <connections>
+                                    <segue destination="8oM-24-1zt" kind="modal" id="avr-Pi-z2s"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XA3-rd-GPn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aoc-6Q-713"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ibh-tV-GmX" secondAttribute="bottom" id="IpM-6k-diA"/>
+                            <constraint firstItem="XA3-rd-GPn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LwY-uE-bTx"/>
+                            <constraint firstItem="Ibh-tV-GmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qo8-jU-bEd"/>
+                            <constraint firstAttribute="trailing" secondItem="XA3-rd-GPn" secondAttribute="trailing" id="bj9-wW-7gV"/>
+                            <constraint firstAttribute="trailing" secondItem="Ibh-tV-GmX" secondAttribute="trailing" id="nVb-Ao-3Y3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jnI-go-RB4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="366.83333333333331"/>
+            <point key="canvasLocation" x="162" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_GoBack2" width="223" height="223"/>
+        <image name="button_MyFridge" width="582" height="70"/>
+        <image name="button_checkboxEmpty" width="93" height="93"/>
+        <image name="downCover" width="641" height="84"/>
+        <image name="upCover" width="641" height="304"/>
+        <image name="upCover_myFridge" width="641" height="240"/>
+    </resources>
 </document>
