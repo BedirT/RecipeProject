@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" secondItem="U2l-FB-Xyz" secondAttribute="height" multiplier="40:19" id="Xsu-gs-Ma1"/>
                                 </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-da-aGg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-da-aGg">
                                 <rect key="frame" x="0.0" y="527" width="320" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cD9-da-aGg" secondAttribute="height" multiplier="321:41" id="j21-ho-lLC"/>
@@ -39,6 +39,22 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="iIM-Tz-yWL"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
+                                <rect key="frame" x="44" y="460" width="59" height="59"/>
+                                <state key="normal" image="Facebook copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
+                                <rect key="frame" x="102" y="460" width="59" height="59"/>
+                                <state key="normal" image="Twitter copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
+                                <rect key="frame" x="160" y="460" width="59" height="59"/>
+                                <state key="normal" image="Youtube New"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
+                                <rect key="frame" x="218" y="460" width="59" height="59"/>
+                                <state key="normal" image="App Store"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,49 +91,52 @@
                                 <rect key="frame" x="23" y="135.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
-                                <rect key="frame" x="63" y="132.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
+                                <rect key="frame" x="63" y="135.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
-                                <rect key="frame" x="63" y="175.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
+                                <rect key="frame" x="63" y="178.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
-                                <rect key="frame" x="63" y="218.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
+                                <rect key="frame" x="63" y="221.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
-                                <rect key="frame" x="63" y="261.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olive Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
+                                <rect key="frame" x="63" y="264.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
-                                <rect key="frame" x="63" y="304.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
+                                <rect key="frame" x="63" y="307.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-EH-XSa">
-                                <rect key="frame" x="63" y="347.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <rect key="frame" x="63" y="350.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-4J-zwE">
-                                <rect key="frame" x="63" y="390.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <rect key="frame" x="63" y="393.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Sc-47S">
-                                <rect key="frame" x="63" y="433.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-Xc-Yhs">
-                                <rect key="frame" x="63" y="476.5" width="237" height="36"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <rect key="frame" x="63" y="436.5" width="237" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-tV-GmX">
@@ -156,10 +175,6 @@
                                 <rect key="frame" x="23" y="393.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJG-JC-NhS" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="479.5" width="29" height="30"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="436.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
@@ -169,6 +184,16 @@
                                 <state key="normal" backgroundImage="button_GoBack2"/>
                                 <connections>
                                     <segue destination="8oM-24-1zt" kind="modal" id="avr-Pi-z2s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-tJ-YdC">
+                                <rect key="frame" x="23" y="488" width="277" height="30"/>
+                                <color key="backgroundColor" red="0.9434522945789473" green="0.50717002467105265" blue="0.15625433353947371" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="That's It">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="18t-sa-G3d" kind="modal" id="2sY-r3-p48"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,18 +208,78 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jnI-go-RB4"/>
+                    <connections>
+                        <outlet property="item1" destination="Swh-hJ-tY7" id="d22-46-F1B"/>
+                        <outlet property="tunaCheckbox" destination="2wa-fH-70a" id="jWG-1S-c8c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="366"/>
+            <point key="canvasLocation" x="178" y="366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jCN-ja-llB">
+            <objects>
+                <viewController id="18t-sa-G3d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ei-oD-9NE"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ib-0P-JQU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qdQ-Wb-uMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="vzf-Sd-BID">
+                                <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vzf-Sd-BID" secondAttribute="height" multiplier="321:41" id="bGX-0u-5QU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_matches" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-W9-tQB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O2J-W9-tQB" secondAttribute="height" multiplier="107:40" id="1y1-rg-5WZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-7u-loh">
+                                <rect key="frame" x="270" y="87" width="30" height="30"/>
+                                <state key="normal" backgroundImage="button_GoBack2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="9NU-Bh-skP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vzf-Sd-BID" secondAttribute="trailing" id="K8Y-L4-NJK"/>
+                            <constraint firstItem="3Ib-0P-JQU" firstAttribute="top" secondItem="vzf-Sd-BID" secondAttribute="bottom" id="QfB-li-OuH"/>
+                            <constraint firstItem="O2J-W9-tQB" firstAttribute="leading" secondItem="qdQ-Wb-uMZ" secondAttribute="leading" id="YdT-08-Ium"/>
+                            <constraint firstAttribute="trailing" secondItem="O2J-W9-tQB" secondAttribute="trailing" id="ZdL-Rg-k5A"/>
+                            <constraint firstItem="O2J-W9-tQB" firstAttribute="top" secondItem="qdQ-Wb-uMZ" secondAttribute="top" id="o5c-pF-2JT"/>
+                            <constraint firstItem="vzf-Sd-BID" firstAttribute="leading" secondItem="qdQ-Wb-uMZ" secondAttribute="leading" id="qYj-4x-N5g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3bk-pu-EYP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bja-34-WhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="366"/>
         </scene>
     </scenes>
     <resources>
+        <image name="App Store" width="255" height="256"/>
+        <image name="Facebook copy" width="256" height="256"/>
+        <image name="Twitter copy" width="255" height="256"/>
+        <image name="Youtube New" width="256" height="256"/>
         <image name="button_GoBack2" width="223" height="223"/>
         <image name="button_MyFridge" width="582" height="70"/>
         <image name="button_checkboxEmpty" width="93" height="93"/>
         <image name="downCover" width="641" height="84"/>
         <image name="upCover" width="641" height="304"/>
+        <image name="upCover_matches" width="641" height="240"/>
         <image name="upCover_myFridge" width="641" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iIM-Tz-yWL"/>
+    </inferredMetricsTieBreakers>
 </document>

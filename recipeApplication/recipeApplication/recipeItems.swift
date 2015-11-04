@@ -59,7 +59,9 @@ struct KitchenLibrary {
         [
             "title": "Chocolate Truffle Cake",
             "directions": "1.Melt chocolate with butter. Cool. 2.Beat 2/3 Cup of sugar with egg yolks till thick and lemon coloured.3.Add Chocolate mixture and flour. blend well.4.Beat egg whites till soft peaks form. Add 2 Tbsp sugar and beat till stiff and shiny peaks form. 5.Fold Chocolate mixture into egg whites. Blend well.6.Pour into greased and floured 9 springform pan. 7.Bake at 375 for 35 - 40 minute.8.Cake will be moist in centre. Cool.9.Cake will fall in centre.10.Melt chocolate with butter and water. 11.Blend until smooth.12.Spread over cake.13.Garnish:.14.Melt chocolate. Put in Sandwich bag and cut a very small hole in 1 corner. Decorate cake with con centric circles. Starting at the centre draw a knife lightly (do not cut cake) through circles to outside edge. This will create a pattern similar to spider web.",
-            "items": ["6(1 ounce) semi-sweet chocolate baking squares ", "3/4 cup butter", "2/3 cup granulated sugar", "4 eggs yolks", "1/3 cup all-purpose flour", "4 egg whites", "2 tablespoons granulated sugar"]
+            //"items": ["6(1 ounce) semi-sweet chocolate baking squares ", "3/4 cup butter", "2/3 cup granulated sugar", "4 eggs yolks", "1/3 cup all-purpose flour", "4 egg whites", "2 tablespoons granulated sugar"]
+            
+            "items": ["semi-sweet chocolate baking squares ", "butter", "granulated sugar", "eggs yolks", "all-purpose flour", "egg whites", "tablespoons granulated sugar"]
         ],
         
         [
