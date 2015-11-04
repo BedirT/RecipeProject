@@ -10,16 +10,18 @@ import UIKit
 
 class checkBox: UIButton {
     
+    
     //images
     let checkedImage = UIImage(named: "button_checkboxFilled")
     let uncheckedImage = UIImage(named: "button_checkboxEmpty")
     
+    var checkedItemsSet = Set<String>() // OUR SET FOR STORING CHECKED ITEMS
     // Bool Property
     var isChecked : Bool = false {
         didSet{
             if isChecked == true{
                 self.setImage(checkedImage, forState: .Normal)
-                
+                checkedItemsSet.insert("itemsName") // I NEED TO DECLARE ITEMS NAME.
             }else {
                 self.setImage(uncheckedImage, forState: .Normal)
             }
