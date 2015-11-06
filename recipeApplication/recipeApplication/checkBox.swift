@@ -16,6 +16,7 @@ class checkBox: UIButton {
     let uncheckedImage = UIImage(named: "button_checkboxEmpty")
     
     var checkedItemsSet = Set<String>() // OUR SET FOR STORING CHECKED ITEMS
+    
     // Bool Property
     var isChecked : Bool = false {
         didSet{

@@ -9,6 +9,8 @@ var arr: Array<Dictionary<String,Any>> = []
 
 var dict: Dictionary<String,Any> = [:]
 
+dict
+
 dict.updateValue("Boiled Eggs", forKey: "title")
 dict.updateValue("1.)Place the eggs in a medium saucepan and cover with room temperature water. Bring the eggs to a boil, remove from the heat and let sit for 8 minutes. Shock the eggs in cold water to stop the cooking and shrink the egg from the shell. Peel.", forKey: "directions")
 dict.updateValue(Set(["Egg"]), forKey: "items")

@@ -44,6 +44,3 @@ choosenItem.isSubsetOf(set1)        // false
                                          //  DIRECTLY, WITHOUT ADDING IT MANUALLY ||
                                         //       SO WE SHOULD KEEP IT IN MIND     ||
 
-
-
-

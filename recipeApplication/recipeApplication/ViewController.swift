@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func didTapFacebook(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.facebook.com")!)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
     }
+        
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
