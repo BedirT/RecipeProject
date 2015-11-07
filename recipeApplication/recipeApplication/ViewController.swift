@@ -10,9 +10,61 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    ///////////////////////////////////
+    //////////// MY LABELS ////////////
+    
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    
+    ///////////////////////////////////
+    
+    ///////////////////////////////////
+    //////////// CHECKBOXES ///////////
+    
+    @IBAction func box1(sender: checkBox) {
+    }
+    @IBAction func box2(sender: checkBox) {
+    }
+    @IBAction func box3(sender: checkBox) {
+    }
+    @IBAction func box4(sender: checkBox) {
+    }
+    @IBAction func box5(sender: checkBox) {
+    }
+    @IBAction func box6(sender: checkBox) {
+    }
+    @IBAction func box7(sender: checkBox) {
+    }
+    @IBAction func box8(sender: checkBox) {
+    }
+    
+    ///////////////////////////////////
+    ///////////////////////////////////
+    
+    ///////////////////////////////////
+    /////////// SOCIAL LINKS //////////
+
     @IBAction func didTapFacebook(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://www.facebook.com")!)
     }
+    @IBAction func didTapTwitter(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.twitter.com")!)
+    }
+    @IBAction func didTapYoutube(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.youtube.com")!)
+    }
+    @IBAction func didTapAppStore(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.appstore.com")!)
+    }
+    
+    ///////////////////////////////////
+    ///////////////////////////////////
     
     override func viewDidLoad() {
         super.viewDidLoad()

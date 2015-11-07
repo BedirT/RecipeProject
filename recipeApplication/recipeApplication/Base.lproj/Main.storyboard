@@ -59,6 +59,9 @@
                                     <constraint firstAttribute="width" constant="59" id="nCy-LT-JDo"/>
                                 </constraints>
                                 <state key="normal" image="Twitter copy"/>
+                                <connections>
+                                    <action selector="didTapTwitter:" destination="8oM-24-1zt" eventType="touchUpInside" id="8yJ-fj-ehT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
                                 <rect key="frame" x="160" y="460" width="59" height="59"/>
@@ -67,6 +70,9 @@
                                     <constraint firstAttribute="width" constant="59" id="wtF-rZ-iQw"/>
                                 </constraints>
                                 <state key="normal" image="Youtube New"/>
+                                <connections>
+                                    <action selector="didTapYoutube:" destination="8oM-24-1zt" eventType="touchUpInside" id="Un4-Jx-1fC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
                                 <rect key="frame" x="218" y="460" width="59" height="59"/>
@@ -75,6 +81,9 @@
                                     <constraint firstAttribute="height" constant="59" id="Dav-eh-fwL"/>
                                 </constraints>
                                 <state key="normal" image="App Store"/>
+                                <connections>
+                                    <action selector="didTapAppStore:" destination="8oM-24-1zt" eventType="touchUpInside" id="mmY-sZ-KX2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,9 +124,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-fH-70a" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-fH-70a" userLabel="1" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="135.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxD-qF-QTq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
                                 <rect key="frame" x="63" y="132" width="237" height="35"/>
@@ -173,33 +185,54 @@
                                     <constraint firstAttribute="width" secondItem="XA3-rd-GPn" secondAttribute="height" multiplier="321:121" id="th4-DA-my3"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-gF-SSy" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-gF-SSy" userLabel="2" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="178.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeU-Ce-EBZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-hq-KD0" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-hq-KD0" userLabel="4" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="264.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sl2-Vq-9Pd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-er-Xrr" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-er-Xrr" userLabel="5" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="307.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVX-I9-i1J"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-7Q-n8y" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-7Q-n8y" userLabel="3" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="221.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuL-RZ-V0Y"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-CP-idX" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-CP-idX" userLabel="6" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="350.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOx-Bl-FyC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Xb-4vj" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Xb-4vj" userLabel="7" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="393.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3V-ai-EAV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" customClass="checkBox" customModule="recipeApplication">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" userLabel="8" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="436.5" width="29" height="29"/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
+                                <connections>
+                                    <action selector="box8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="58m-HL-DjB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-ZK-bya">
                                 <rect key="frame" x="270" y="88" width="30" height="30"/>
@@ -237,8 +270,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="jnI-go-RB4"/>
                     <connections>
-                        <outlet property="item1" destination="Swh-hJ-tY7" id="d22-46-F1B"/>
-                        <outlet property="tunaCheckbox" destination="2wa-fH-70a" id="jWG-1S-c8c"/>
+                        <outlet property="label1" destination="Swh-hJ-tY7" id="0Ip-ub-v3A"/>
+                        <outlet property="label2" destination="6qa-yf-8xh" id="9pE-xn-flT"/>
+                        <outlet property="label3" destination="YxL-PY-TAe" id="Tot-q1-pJW"/>
+                        <outlet property="label4" destination="eGi-sJ-2GG" id="UvJ-xU-QQA"/>
+                        <outlet property="label5" destination="glF-uv-WbR" id="wc2-F0-dHW"/>
+                        <outlet property="label6" destination="dzv-EH-XSa" id="odL-oF-q1X"/>
+                        <outlet property="label7" destination="ALo-4J-zwE" id="10B-vS-CPc"/>
+                        <outlet property="label8" destination="fBd-Sc-47S" id="z1j-vT-0Ne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

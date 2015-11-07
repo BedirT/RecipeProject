@@ -22,7 +22,6 @@ class checkBox: UIButton {
         didSet{
             if isChecked == true{
                 self.setImage(checkedImage, forState: .Normal)
-                checkedItemsSet.insert("itemsName") // I NEED TO DECLARE ITEMS NAME.
             }else {
                 self.setImage(uncheckedImage, forState: .Normal)
             }
@@ -38,8 +37,10 @@ class checkBox: UIButton {
         if (sender == self) {
             if isChecked == true {
                 isChecked = false
+                checkedItemsSet.remove("ingredients")
             }else {
                 isChecked = true
+                checkedItemsSet.insert("ingredients")
             }
         }
     }

@@ -196,6 +196,9 @@
 		F8D6AEA01BDEA9F600FF7165 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					itemTuna,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mustafa Bedir Tapkan";
