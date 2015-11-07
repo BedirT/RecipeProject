@@ -22,6 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var label7: UILabel!
     @IBOutlet weak var label8: UILabel!
     
+    func labelsAreHere () -> [Int] {
+        var label: Array = [label1,label2,label3,label4,label5,label6,label7,label8]
+        var myTag: Array = [1]
+        myTag.removeAll()
+        for var a = 0 ; a < label.count ; a++ {
+             myTag.append(label[a].tag)
+        }
+        return myTag
+    }
+    
     ///////////////////////////////////
     
     ///////////////////////////////////
@@ -68,7 +78,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     
     }
         
