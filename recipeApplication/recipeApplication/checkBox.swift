@@ -15,13 +15,14 @@ class checkBox: UIButton {
     let checkedImage = UIImage(named: "button_checkboxFilled")
     let uncheckedImage = UIImage(named: "button_checkboxEmpty")
     
+    
     var checkedItemsSet = Set<String>() // OUR SET FOR STORING CHECKED ITEMS
+    
     // Bool Property
     var isChecked : Bool = false {
         didSet{
             if isChecked == true{
                 self.setImage(checkedImage, forState: .Normal)
-                checkedItemsSet.insert("itemsName") // I NEED TO DECLARE ITEMS NAME.
             }else {
                 self.setImage(uncheckedImage, forState: .Normal)
             }
@@ -32,13 +33,22 @@ class checkBox: UIButton {
         self.addTarget(self, action: "buttonClicked:" , forControlEvents: UIControlEvents.TouchUpInside)
         self.isChecked = false
     }
+    func checkingIfTagsAreSame () {
+//        if self.tag == ViewController.labelsAreHere() {
+//
+//        }
+    }
     
     func buttonClicked (sender:UIButton) {
         if (sender == self) {
+//            var a = viewWithTag()
             if isChecked == true {
                 isChecked = false
+//                checkedItemsSet.remove("\(a)")
+                
             }else {
                 isChecked = true
+//                checkedItemsSet.insert("\(a)")
             }
         }
     }
