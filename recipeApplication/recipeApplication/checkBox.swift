@@ -33,15 +33,15 @@ class checkBox: UIButton {
         self.addTarget(self, action: "buttonClicked:" , forControlEvents: UIControlEvents.TouchUpInside)
         self.isChecked = false
     }
-    func checkingIfTagsAreSame () {
+//    func checkingIfTagsAreSame () {
 //        if self.tag == ViewController.labelsAreHere() {
-//
+//            
 //        }
-    }
+//    }
     
     func buttonClicked (sender:UIButton) {
         if (sender == self) {
-//            var a = viewWithTag()
+//            var a = viewWithTag(')
             if isChecked == true {
                 isChecked = false
 //                checkedItemsSet.remove("\(a)")
