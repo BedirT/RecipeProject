@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -21,18 +21,21 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-FB-Xyz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U2l-FB-Xyz" secondAttribute="height" multiplier="40:19" id="Xsu-gs-Ma1"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-da-aGg">
                                 <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cD9-da-aGg" secondAttribute="height" multiplier="321:41" id="j21-ho-lLC"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-cJ-MVG">
                                 <rect key="frame" x="20" y="169" width="280" height="34"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hFj-cJ-MVG" secondAttribute="height" multiplier="141:17" id="hHZ-sP-qBJ"/>
                                 </constraints>
@@ -41,6 +44,28 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="iIM-Tz-yWL"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
+                                <rect key="frame" x="44" y="460" width="59" height="59"/>
+                                <animations/>
+                                <state key="normal" image="Facebook copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
+                                <rect key="frame" x="102" y="460" width="59" height="59"/>
+                                <animations/>
+                                <state key="normal" image="Twitter copy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
+                                <rect key="frame" x="160" y="460" width="59" height="59"/>
+                                <animations/>
+                                <state key="normal" image="Youtube New"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
+                                <rect key="frame" x="218" y="460" width="59" height="59"/>
+                                <animations/>
+                                <state key="normal" image="App Store"/>
+                            </button>
+=======
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3O-JM-puY">
                                 <rect key="frame" x="42" y="460" width="236" height="59"/>
                                 <subviews>
@@ -90,7 +115,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="U2l-FB-Xyz" firstAttribute="top" secondItem="iea-C8-w3f" secondAttribute="top" id="1l7-Up-JOt"/>
@@ -125,61 +152,108 @@
                         <subviews>
                             <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-fH-70a" userLabel="1" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="135.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxD-qF-QTq"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
+                                <rect key="frame" x="63" y="172" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
                                 <rect key="frame" x="63" y="132" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
+                                <rect key="frame" x="63" y="221.5" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
                                 <rect key="frame" x="63" y="175" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olive Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
+                                <rect key="frame" x="63" y="264.5" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
                                 <rect key="frame" x="63" y="218" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
+                                <rect key="frame" x="63" y="307.5" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olive Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
                                 <rect key="frame" x="63" y="261" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-EH-XSa">
+                                <rect key="frame" x="63" y="350.5" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
                                 <rect key="frame" x="63" y="304" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-4J-zwE">
+                                <rect key="frame" x="63" y="393.5" width="237" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Sc-47S">
+                                <rect key="frame" x="63" y="436.5" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1005" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-EH-XSa">
                                 <rect key="frame" x="63" y="347" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-tV-GmX">
                                 <rect key="frame" x="0.0" y="526" width="320" height="41.5"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ibh-tV-GmX" secondAttribute="height" multiplier="318:41" id="L2g-W0-mm8"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_myFridge" translatesAutoresizingMaskIntoConstraints="NO" id="XA3-rd-GPn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XA3-rd-GPn" secondAttribute="height" multiplier="321:121" id="th4-DA-my3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-gF-SSy" userLabel="2" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="178.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeU-Ce-EBZ"/>
@@ -187,6 +261,7 @@
                             </button>
                             <button opaque="NO" tag="1003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-hq-KD0" userLabel="4" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="264.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sl2-Vq-9Pd"/>
@@ -194,6 +269,7 @@
                             </button>
                             <button opaque="NO" tag="1004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-er-Xrr" userLabel="5" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="307.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVX-I9-i1J"/>
@@ -201,6 +277,7 @@
                             </button>
                             <button opaque="NO" tag="1002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-7Q-n8y" userLabel="3" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="221.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuL-RZ-V0Y"/>
@@ -208,6 +285,7 @@
                             </button>
                             <button opaque="NO" tag="1005" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-CP-idX" userLabel="6" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="350.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOx-Bl-FyC"/>
@@ -215,13 +293,20 @@
                             </button>
                             <button opaque="NO" tag="1006" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Xb-4vj" userLabel="7" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="393.5" width="29" height="29"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3V-ai-EAV"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" customClass="checkBox" customModule="recipeApplication">
+                                <rect key="frame" x="23" y="436.5" width="29" height="29"/>
+                                <animations/>
+=======
                             <button opaque="NO" tag="1007" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" userLabel="8" customClass="checkBox" customModule="recipeApplication">
                                 <rect key="frame" x="23" y="436" width="29" height="29"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <state key="normal" backgroundImage="button_checkboxEmpty"/>
                                 <connections>
                                     <action selector="box8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="58m-HL-DjB"/>
@@ -229,13 +314,19 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-ZK-bya">
                                 <rect key="frame" x="270" y="88" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_GoBack2"/>
                                 <connections>
                                     <segue destination="8oM-24-1zt" kind="modal" id="avr-Pi-z2s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-tJ-YdC">
+<<<<<<< HEAD
+                                <rect key="frame" x="23" y="488" width="277" height="30"/>
+                                <animations/>
+=======
                                 <rect key="frame" x="23" y="476" width="277" height="42"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <color key="backgroundColor" red="0.9434522945789473" green="0.50717002467105265" blue="0.15625433353947371" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="That's It">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -244,6 +335,11 @@
                                     <segue destination="18t-sa-G3d" kind="modal" id="2sY-r3-p48"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
+                                <rect key="frame" x="63" y="132" width="237" height="35"/>
+                                <animations/>
+=======
                             <label opaque="NO" userInteractionEnabled="NO" tag="1007" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Sc-47S">
                                 <rect key="frame" x="63" y="433" width="237" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -252,11 +348,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1006" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-4J-zwE">
                                 <rect key="frame" x="63" y="390" width="237" height="35"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XA3-rd-GPn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aoc-6Q-713"/>
@@ -281,7 +379,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="127" y="371"/>
+=======
             <point key="canvasLocation" x="161" y="366"/>
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
         </scene>
         <!--View Controller-->
         <scene sceneID="jCN-ja-llB">
@@ -297,18 +399,21 @@
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="vzf-Sd-BID">
                                 <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vzf-Sd-BID" secondAttribute="height" multiplier="321:41" id="bGX-0u-5QU"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_matches" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-W9-tQB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O2J-W9-tQB" secondAttribute="height" multiplier="107:40" id="1y1-rg-5WZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-7u-loh">
                                 <rect key="frame" x="270" y="87" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" backgroundImage="button_GoBack2"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="9NU-Bh-skP"/>
@@ -402,6 +507,7 @@
                                 </connections>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OYe-oE-8Q5" firstAttribute="top" secondItem="IdD-Rb-CoW" secondAttribute="bottom" constant="8" id="5ec-Ii-98g"/>

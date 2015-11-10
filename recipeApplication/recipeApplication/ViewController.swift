@@ -80,8 +80,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
     }
+<<<<<<< HEAD
+=======
         
 
+>>>>>>> 363056b777ee7733ba39afbb564c9fa604312168
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
