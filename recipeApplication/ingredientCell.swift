@@ -10,13 +10,10 @@ import UIKit
 
 class ingredientCell: UITableViewCell {
 
-    
-    @IBOutlet weak var checkBox: UIButton!
+    @IBAction func checkBox(sender: AnyObject) {
+    }
     
     @IBOutlet weak var inCellLabel: UILabel!
-    
-    func theLabel () {
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

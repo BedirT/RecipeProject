@@ -14,9 +14,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="52.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-hr-1aS" userLabel="inCellCheckbox">
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-hr-1aS" userLabel="inCellCheckbox" customClass="checkBox" customModule="recipeApplication" customModuleProvider="target">
                         <rect key="frame" x="8" y="5" width="43" height="43"/>
                         <state key="normal" image="button_checkboxEmpty"/>
+                        <connections>
+                            <action selector="checkBox:" destination="vfh-jW-dFz" eventType="touchUpInside" id="jw6-gG-I6b"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlW-Pa-3za">
                         <rect key="frame" x="59" y="8" width="253" height="36.5"/>

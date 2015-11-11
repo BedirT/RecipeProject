@@ -35,8 +35,8 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
- 
         self.ingredientTable.dataSource = self
         
     }
@@ -56,9 +56,14 @@ class ViewController: UIViewController,UITableViewDataSource {
         let cell:ingredientCell = self.ingredientTable.dequeueReusableCellWithIdentifier("cell") as! ingredientCell
 
         cell.inCellLabel.text = self.items[indexPath.row]
-        cell.c
-
+        cell.checkBox.tag = indexPath.row
+        cell.checkBox.addTarget(self, action: Selector("yourButtonClicked:"), forControlEvents: .TouchUpInside)
         
+        return cell
     }
 
+    func yourCheckBoxClicked(cbx:UIButton){
+        print(self.items[cbx.tag])
+    }
+    
 }
