@@ -7,14 +7,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="vfh-jW-dFz">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="vfh-jW-dFz" customClass="ingredientCell" customModule="recipeApplication" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfh-jW-dFz" id="x09-kV-Erw">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="52.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-hr-1aS">
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-hr-1aS" userLabel="inCellCheckbox">
                         <rect key="frame" x="8" y="5" width="43" height="43"/>
                         <state key="normal" image="button_checkboxEmpty"/>
                     </button>
@@ -26,6 +26,10 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="checkBox" destination="PBu-hr-1aS" id="JJ5-Ln-4a7"/>
+                <outlet property="inCellLabel" destination="KlW-Pa-3za" id="qLd-zi-0bO"/>
+            </connections>
             <point key="canvasLocation" x="267" y="288.5"/>
         </tableViewCell>
     </objects>

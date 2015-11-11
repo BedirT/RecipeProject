@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -41,68 +40,67 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="iIM-Tz-yWL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
-                                <rect key="frame" x="40" y="460" width="59" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="Ngb-tb-bpH"/>
-                                    <constraint firstAttribute="height" constant="59" id="WFm-Qc-5Ia"/>
-                                </constraints>
-                                <state key="normal" image="Facebook copy"/>
-                                <connections>
-                                    <action selector="didTapFacebook:" destination="8oM-24-1zt" eventType="touchUpInside" id="A5m-qo-ffj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
-                                <rect key="frame" x="102" y="460" width="59" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="DGk-Ir-lIM"/>
-                                    <constraint firstAttribute="width" constant="59" id="nCy-LT-JDo"/>
-                                </constraints>
-                                <state key="normal" image="Twitter copy"/>
-                                <connections>
-                                    <action selector="didTapTwitter:" destination="8oM-24-1zt" eventType="touchUpInside" id="8yJ-fj-ehT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
-                                <rect key="frame" x="160" y="460" width="59" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="tdR-hy-itq"/>
-                                    <constraint firstAttribute="width" constant="59" id="wtF-rZ-iQw"/>
-                                </constraints>
-                                <state key="normal" image="Youtube New"/>
-                                <connections>
-                                    <action selector="didTapYoutube:" destination="8oM-24-1zt" eventType="touchUpInside" id="Un4-Jx-1fC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
-                                <rect key="frame" x="218" y="460" width="59" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="Awj-Ze-qFp"/>
-                                    <constraint firstAttribute="height" constant="59" id="Dav-eh-fwL"/>
-                                </constraints>
-                                <state key="normal" image="App Store"/>
-                                <connections>
-                                    <action selector="didTapAppStore:" destination="8oM-24-1zt" eventType="touchUpInside" id="mmY-sZ-KX2"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erc-TW-RY4">
+                                <rect key="frame" x="42" y="460" width="236" height="59"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="NKp-R0-MX0"/>
+                                            <constraint firstAttribute="width" constant="59" id="xq3-iD-Ds8"/>
+                                        </constraints>
+                                        <state key="normal" image="Facebook copy"/>
+                                        <connections>
+                                            <action selector="didTapFacebook:" destination="8oM-24-1zt" eventType="touchUpInside" id="A5m-qo-ffj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
+                                        <rect key="frame" x="59" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="TtL-AW-sgt"/>
+                                            <constraint firstAttribute="width" constant="59" id="jP0-W0-I7t"/>
+                                        </constraints>
+                                        <state key="normal" image="Twitter copy"/>
+                                        <connections>
+                                            <action selector="didTapTwitter:" destination="8oM-24-1zt" eventType="touchUpInside" id="8yJ-fj-ehT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
+                                        <rect key="frame" x="118" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="gj4-HW-Zqo"/>
+                                            <constraint firstAttribute="width" constant="59" id="v6K-rT-qeO"/>
+                                        </constraints>
+                                        <state key="normal" image="Youtube New"/>
+                                        <connections>
+                                            <action selector="didTapYoutube:" destination="8oM-24-1zt" eventType="touchUpInside" id="Un4-Jx-1fC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
+                                        <rect key="frame" x="177" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="59" id="dLW-1k-a1M"/>
+                                            <constraint firstAttribute="height" constant="59" id="fXQ-vF-ZQT"/>
+                                        </constraints>
+                                        <state key="normal" image="App Store"/>
+                                        <connections>
+                                            <action selector="didTapAppStore:" destination="8oM-24-1zt" eventType="touchUpInside" id="mmY-sZ-KX2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="erc-TW-RY4" firstAttribute="centerX" secondItem="iea-C8-w3f" secondAttribute="centerX" id="1Rm-Ru-m39"/>
                             <constraint firstItem="U2l-FB-Xyz" firstAttribute="top" secondItem="iea-C8-w3f" secondAttribute="top" id="1l7-Up-JOt"/>
-                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="ZI5-mO-eCT" secondAttribute="bottom" constant="8" id="2Tt-S3-MXd"/>
-                            <constraint firstItem="luz-HJ-hQz" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leadingMargin" constant="24" id="FBz-SX-xUw"/>
-                            <constraint firstItem="HL6-pG-CaJ" firstAttribute="leading" secondItem="eMM-3U-8Hs" secondAttribute="trailing" constant="-1" id="P89-0L-1Nn"/>
-                            <constraint firstItem="ZI5-mO-eCT" firstAttribute="leading" secondItem="HL6-pG-CaJ" secondAttribute="trailing" constant="-1" id="Qfn-rf-xm0"/>
-                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="HL6-pG-CaJ" secondAttribute="bottom" constant="8" id="RO4-ke-5NH"/>
-                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="luz-HJ-hQz" secondAttribute="bottom" constant="8" id="VZm-Bz-uBv"/>
+                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="erc-TW-RY4" secondAttribute="bottom" constant="8" id="5E2-AD-U1G"/>
                             <constraint firstAttribute="trailing" secondItem="cD9-da-aGg" secondAttribute="trailing" id="Xx8-KN-4Lt"/>
                             <constraint firstAttribute="trailing" secondItem="hFj-cJ-MVG" secondAttribute="trailing" constant="20" id="cO8-1m-gpt"/>
                             <constraint firstItem="hFj-cJ-MVG" firstAttribute="top" secondItem="U2l-FB-Xyz" secondAttribute="bottom" constant="17" id="gLG-qg-eoD"/>
                             <constraint firstItem="iIM-5j-mM2" firstAttribute="top" secondItem="cD9-da-aGg" secondAttribute="bottom" id="opc-qd-5C9"/>
                             <constraint firstItem="hFj-cJ-MVG" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" constant="20" id="pdm-zU-DmP"/>
-                            <constraint firstItem="eMM-3U-8Hs" firstAttribute="leading" secondItem="luz-HJ-hQz" secondAttribute="trailing" constant="3" id="qTg-gu-qlZ"/>
                             <constraint firstItem="U2l-FB-Xyz" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" id="sZO-xk-YYg"/>
-                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="eMM-3U-8Hs" secondAttribute="bottom" constant="8" id="vZb-ve-9Vb"/>
                             <constraint firstAttribute="trailing" secondItem="U2l-FB-Xyz" secondAttribute="trailing" id="y16-tb-8Bb"/>
                             <constraint firstItem="cD9-da-aGg" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" id="ykO-tI-bOc"/>
                         </constraints>
@@ -934,7 +932,7 @@
         <image name="upCover_recipe" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9NU-Bh-skP"/>
-        <segue reference="SYR-aR-9Bo"/>
+        <segue reference="2sY-r3-p48"/>
+        <segue reference="iIM-Tz-yWL"/>
     </inferredMetricsTieBreakers>
 </document>

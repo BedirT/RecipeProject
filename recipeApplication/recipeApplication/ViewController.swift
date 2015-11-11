@@ -8,16 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource {
     
+    var items = ["Cake","Olives","Oils"]
     
     @IBOutlet weak var ingredientTable: UITableView!
     
-    
-    
     ///////////////////////////////////
     /////////// SOCIAL LINKS //////////
-
+    
     @IBAction func didTapFacebook(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://www.facebook.com")!)
     }
@@ -34,15 +33,32 @@ class ViewController: UIViewController {
     ///////////////////////////////////
     ///////////////////////////////////
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+ 
+        self.ingredientTable.dataSource = self
+        
     }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.items.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:ingredientCell = self.ingredientTable.dequeueReusableCellWithIdentifier("cell") as! ingredientCell
+
+        cell.inCellLabel.text = self.items[indexPath.row]
+        cell.c
+
+        
     }
 
 }

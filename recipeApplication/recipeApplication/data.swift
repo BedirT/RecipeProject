@@ -13,9 +13,6 @@ class data: UIView {
     
     func myFunc() {
         
-        let item1 = Set(["Egg"])
-        let chosenItem = Set(["Egg", "Rice"])
-        
         var arr: Array<Dictionary<String,Any>> = []
         
         var dict: Dictionary<String,Any> = [:]
