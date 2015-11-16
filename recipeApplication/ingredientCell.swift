@@ -10,9 +10,8 @@ import UIKit
 
 class ingredientCell: UITableViewCell {
 
-    @IBAction func checkBox(sender: AnyObject) {
-    }
     
+    @IBOutlet weak var checkBox: UIButton!
     @IBOutlet weak var inCellLabel: UILabel!
     
     override func awakeFromNib() {
