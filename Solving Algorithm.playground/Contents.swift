@@ -7,11 +7,9 @@ var choosenItem = Set(["Egg","White rice"])     // THIS PLACE IS FOR THE DATA TH
 
 var arr: Array<Dictionary<String,Any>> = []     // HERE IS AN EMPTY ARRAY FOR US TO FILL
 
-var checkedItems = Set(["Thing"])
-                                                // HERE IS OUR EMPTY SET TO FILL WITH OUR CHECKLISTS
-checkedItems.remove("Thing")
-
-checkedItems
+var set = Set<String>()                         // HERE IS AN EMPTY SET
+set.insert("Member")                            // INSERTING IN THAT SET
+set.insert("Da")
 
 var dict: Dictionary<String,Any> = [:]
 
@@ -45,7 +43,4 @@ choosenItem.isSubsetOf(set1)        // false
                                           //   HELP US TO CREATE TITLE AND INGR.  ||
                                          //  DIRECTLY, WITHOUT ADDING IT MANUALLY ||
                                         //       SO WE SHOULD KEEP IT IN MIND     ||
-
-
-
 

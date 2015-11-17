@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82418DC1BEBD8D9001D03A9 /* data.swift */; };
+		F879B8DC1BF3F45E0021AE7F /* ingredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */; };
 		F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */; };
 		F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */; };
 		F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		F8D6AECC1BDEA9F600FF7165 /* recipeApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AECB1BDEA9F600FF7165 /* recipeApplicationUITests.swift */; };
 		F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */; };
 		F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */; };
+		F8E5803F1BF2821B00102BC2 /* tableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E5803E1BF2821B00102BC2 /* tableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82418DC1BEBD8D9001D03A9 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ingredientCell.swift; path = ../ingredientCell.swift; sourceTree = "<group>"; };
 		F8D6AEA81BDEA9F600FF7165 /* recipeApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipeApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		F8D6AECD1BDEA9F600FF7165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeItems.swift; sourceTree = "<group>"; };
 		F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
+		F8E5803E1BF2821B00102BC2 /* tableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +107,16 @@
 		F8D6AEAA1BDEA9F600FF7165 /* recipeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */,
 				F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */,
 				F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */,
 				F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */,
 				F8D6AEB21BDEA9F600FF7165 /* Assets.xcassets */,
 				F8D6AEB41BDEA9F600FF7165 /* LaunchScreen.storyboard */,
 				F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */,
+				F8E5803E1BF2821B00102BC2 /* tableView.xib */,
 				F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */,
+				F82418DC1BEBD8D9001D03A9 /* data.swift */,
 				F8D6AEB71BDEA9F600FF7165 /* Info.plist */,
 			);
 			path = recipeApplication;
@@ -193,6 +202,9 @@
 		F8D6AEA01BDEA9F600FF7165 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					itemTuna,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mustafa Bedir Tapkan";
@@ -236,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D6AEB61BDEA9F600FF7165 /* LaunchScreen.storyboard in Resources */,
+				F8E5803F1BF2821B00102BC2 /* tableView.xib in Resources */,
 				F8D6AEB31BDEA9F600FF7165 /* Assets.xcassets in Resources */,
 				F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */,
+				F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */,
+				F879B8DC1BF3F45E0021AE7F /* ingredientCell.swift in Sources */,
 				F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */,
 				F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */,
 				F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */,

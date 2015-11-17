@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="TGI-P7-zp0">
             <objects>
-                <viewController id="8oM-24-1zt" sceneMemberID="viewController">
+                <viewController id="8oM-24-1zt" customClass="ViewController" customModule="recipeApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0Q-Ub-rrA"/>
                         <viewControllerLayoutGuide type="bottom" id="iIM-5j-mM2"/>
@@ -40,26 +40,61 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="iIM-Tz-yWL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
-                                <rect key="frame" x="44" y="460" width="59" height="59"/>
-                                <state key="normal" image="Facebook copy"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
-                                <rect key="frame" x="102" y="460" width="59" height="59"/>
-                                <state key="normal" image="Twitter copy"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
-                                <rect key="frame" x="160" y="460" width="59" height="59"/>
-                                <state key="normal" image="Youtube New"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
-                                <rect key="frame" x="218" y="460" width="59" height="59"/>
-                                <state key="normal" image="App Store"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erc-TW-RY4">
+                                <rect key="frame" x="42" y="460" width="236" height="59"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-HJ-hQz">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="NKp-R0-MX0"/>
+                                            <constraint firstAttribute="width" constant="59" id="xq3-iD-Ds8"/>
+                                        </constraints>
+                                        <state key="normal" image="Facebook copy"/>
+                                        <connections>
+                                            <action selector="didTapFacebook:" destination="8oM-24-1zt" eventType="touchUpInside" id="A5m-qo-ffj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-3U-8Hs">
+                                        <rect key="frame" x="59" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="TtL-AW-sgt"/>
+                                            <constraint firstAttribute="width" constant="59" id="jP0-W0-I7t"/>
+                                        </constraints>
+                                        <state key="normal" image="Twitter copy"/>
+                                        <connections>
+                                            <action selector="didTapTwitter:" destination="8oM-24-1zt" eventType="touchUpInside" id="8yJ-fj-ehT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-pG-CaJ">
+                                        <rect key="frame" x="118" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="gj4-HW-Zqo"/>
+                                            <constraint firstAttribute="width" constant="59" id="v6K-rT-qeO"/>
+                                        </constraints>
+                                        <state key="normal" image="Youtube New"/>
+                                        <connections>
+                                            <action selector="didTapYoutube:" destination="8oM-24-1zt" eventType="touchUpInside" id="Un4-Jx-1fC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-mO-eCT">
+                                        <rect key="frame" x="177" y="0.0" width="59" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="59" id="dLW-1k-a1M"/>
+                                            <constraint firstAttribute="height" constant="59" id="fXQ-vF-ZQT"/>
+                                        </constraints>
+                                        <state key="normal" image="App Store"/>
+                                        <connections>
+                                            <action selector="didTapAppStore:" destination="8oM-24-1zt" eventType="touchUpInside" id="mmY-sZ-KX2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="erc-TW-RY4" firstAttribute="centerX" secondItem="iea-C8-w3f" secondAttribute="centerX" id="1Rm-Ru-m39"/>
                             <constraint firstItem="U2l-FB-Xyz" firstAttribute="top" secondItem="iea-C8-w3f" secondAttribute="top" id="1l7-Up-JOt"/>
+                            <constraint firstItem="cD9-da-aGg" firstAttribute="top" secondItem="erc-TW-RY4" secondAttribute="bottom" constant="8" id="5E2-AD-U1G"/>
                             <constraint firstAttribute="trailing" secondItem="cD9-da-aGg" secondAttribute="trailing" id="Xx8-KN-4Lt"/>
                             <constraint firstAttribute="trailing" secondItem="hFj-cJ-MVG" secondAttribute="trailing" constant="20" id="cO8-1m-gpt"/>
                             <constraint firstItem="hFj-cJ-MVG" firstAttribute="top" secondItem="U2l-FB-Xyz" secondAttribute="bottom" constant="17" id="gLG-qg-eoD"/>
@@ -87,58 +122,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-fH-70a" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="135.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-hJ-tY7">
-                                <rect key="frame" x="63" y="135.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qa-yf-8xh">
-                                <rect key="frame" x="63" y="178.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxL-PY-TAe">
-                                <rect key="frame" x="63" y="221.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olive Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-sJ-2GG">
-                                <rect key="frame" x="63" y="264.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-uv-WbR">
-                                <rect key="frame" x="63" y="307.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-EH-XSa">
-                                <rect key="frame" x="63" y="350.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-4J-zwE">
-                                <rect key="frame" x="63" y="393.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Sc-47S">
-                                <rect key="frame" x="63" y="436.5" width="237" height="35"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.89092351168421047" green="0.35706208881578949" blue="0.11485322334210528" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-tV-GmX">
                                 <rect key="frame" x="0.0" y="526" width="320" height="41.5"/>
                                 <constraints>
@@ -151,34 +134,6 @@
                                     <constraint firstAttribute="width" secondItem="XA3-rd-GPn" secondAttribute="height" multiplier="321:121" id="th4-DA-my3"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-gF-SSy" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="178.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-hq-KD0" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="264.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-er-Xrr" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="307.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-7Q-n8y" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="221.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-CP-idX" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="350.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Xb-4vj" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="393.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yn-7w-7i2" customClass="checkBox" customModule="recipeApplication">
-                                <rect key="frame" x="23" y="436.5" width="29" height="29"/>
-                                <state key="normal" backgroundImage="button_checkboxEmpty"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-ZK-bya">
                                 <rect key="frame" x="270" y="88" width="30" height="30"/>
                                 <state key="normal" backgroundImage="button_GoBack2"/>
@@ -187,7 +142,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-tJ-YdC">
-                                <rect key="frame" x="23" y="488" width="277" height="30"/>
+                                <rect key="frame" x="23" y="476" width="277" height="42"/>
                                 <color key="backgroundColor" red="0.9434522945789473" green="0.50717002467105265" blue="0.15625433353947371" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="That's It">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -196,6 +151,12 @@
                                     <segue destination="18t-sa-G3d" kind="modal" id="2sY-r3-p48"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-g9-WFJ">
+                                <rect key="frame" x="8" y="128" width="307" height="340"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -209,13 +170,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="jnI-go-RB4"/>
                     <connections>
-                        <outlet property="item1" destination="Swh-hJ-tY7" id="d22-46-F1B"/>
-                        <outlet property="tunaCheckbox" destination="2wa-fH-70a" id="jWG-1S-c8c"/>
+                        <outlet property="ingredientTable" destination="yrE-g9-WFJ" id="y4v-Rj-o5D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="366"/>
+            <point key="canvasLocation" x="161" y="366"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jCN-ja-llB">
@@ -248,6 +208,13 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="9NU-Bh-skP"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-1f-fvm">
+                                <rect key="frame" x="6" y="127" width="309" height="392"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -265,6 +232,85 @@
             </objects>
             <point key="canvasLocation" x="593" y="366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KUA-Wi-65b">
+            <objects>
+                <viewController id="uXL-0o-w6w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XlS-TE-v32"/>
+                        <viewControllerLayoutGuide type="bottom" id="LSd-tf-s6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dik-sO-Oev">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="Mda-eN-bOH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="118.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mda-eN-bOH" secondAttribute="height" multiplier="321:119" id="QFm-c3-oBl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="aU3-f1-BLG">
+                                <rect key="frame" x="0.0" y="526.5" width="320" height="41.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aU3-f1-BLG" secondAttribute="height" multiplier="23:3" id="pfa-Cs-tne"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdm-0R-rdl">
+                                <rect key="frame" x="0.0" y="117" width="320" height="272"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-8z-fsO">
+                                <rect key="frame" x="0.0" y="295" width="320" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3D-Jm-w0Z">
+                                        <rect key="frame" x="8" y="8" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-nQ-sfx">
+                                        <rect key="frame" x="8" y="37" width="304" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcY-Fe-Reu">
+                                        <rect key="frame" x="135" y="0.0" width="177" height="37"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57412010732323226" green="0.57412010732323226" blue="0.57412010732323226" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fQV-bC-tuk">
+                                <rect key="frame" x="8" y="394" width="303" height="124.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Chili is a very popular traditional Cuban food. Usually when people think of chili they think of a red sauce, often with red meat added (chili con carne), that is eaten over rice. This recipe is a little different in both color and texture but is a delicious spin on a traditional recipe. White chicken chili is a little bit lighter than traditional chili but is still very flavorful! It is up to you how spicy you want to make it, the chili has a lot of flavor either way.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KF-7Z-HE3">
+                                <rect key="frame" x="270" y="86" width="30" height="30"/>
+                                <state key="normal" image="button_GoBack2"/>
+                                <connections>
+                                    <segue destination="18t-sa-G3d" kind="modal" id="SYR-aR-9Bo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mda-eN-bOH" firstAttribute="top" secondItem="Dik-sO-Oev" secondAttribute="top" id="7G8-k6-hvW"/>
+                            <constraint firstAttribute="trailing" secondItem="Mda-eN-bOH" secondAttribute="trailing" id="DCh-6b-lbD"/>
+                            <constraint firstItem="LSd-tf-s6h" firstAttribute="top" secondItem="aU3-f1-BLG" secondAttribute="bottom" id="ETI-P9-dGW"/>
+                            <constraint firstItem="aU3-f1-BLG" firstAttribute="leading" secondItem="Dik-sO-Oev" secondAttribute="leading" id="Zl9-nU-rdn"/>
+                            <constraint firstAttribute="trailing" secondItem="aU3-f1-BLG" secondAttribute="trailing" id="cmb-Dd-xZY"/>
+                            <constraint firstItem="Mda-eN-bOH" firstAttribute="leading" secondItem="Dik-sO-Oev" secondAttribute="leading" id="dRk-8e-a3G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZLJ-M0-31Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Fu-7x-alM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="366"/>
+        </scene>
     </scenes>
     <resources>
         <image name="App Store" width="255" height="256"/>
@@ -273,13 +319,14 @@
         <image name="Youtube New" width="256" height="256"/>
         <image name="button_GoBack2" width="223" height="223"/>
         <image name="button_MyFridge" width="582" height="70"/>
-        <image name="button_checkboxEmpty" width="93" height="93"/>
         <image name="downCover" width="641" height="84"/>
         <image name="upCover" width="641" height="304"/>
         <image name="upCover_matches" width="641" height="240"/>
         <image name="upCover_myFridge" width="641" height="240"/>
+        <image name="upCover_recipe" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iIM-Tz-yWL"/>
+        <segue reference="9NU-Bh-skP"/>
+        <segue reference="2sY-r3-p48"/>
     </inferredMetricsTieBreakers>
 </document>
