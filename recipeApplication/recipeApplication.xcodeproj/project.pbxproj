@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82418DC1BEBD8D9001D03A9 /* data.swift */; };
-		F879B8DC1BF3F45E0021AE7F /* ingredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */; };
 		F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */; };
 		F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */; };
 		F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		F82418DC1BEBD8D9001D03A9 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
-		F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ingredientCell.swift; path = ../ingredientCell.swift; sourceTree = "<group>"; };
 		F8D6AEA81BDEA9F600FF7165 /* recipeApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipeApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 		F8D6AEAA1BDEA9F600FF7165 /* recipeApplication */ = {
 			isa = PBXGroup;
 			children = (
-				F879B8DB1BF3F45E0021AE7F /* ingredientCell.swift */,
 				F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */,
 				F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */,
 				F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */,
@@ -277,7 +274,6 @@
 			files = (
 				F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */,
 				F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */,
-				F879B8DC1BF3F45E0021AE7F /* ingredientCell.swift in Sources */,
 				F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */,
 				F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */,
 				F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */,
