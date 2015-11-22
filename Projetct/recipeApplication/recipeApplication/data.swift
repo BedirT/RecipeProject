@@ -13,9 +13,6 @@ class data: UIView {
     
     func myFunc() {
         
-        let item1 = Set(["Egg"])
-        let chosenItem = Set(["Egg", "Rice"])
-        
         var arr: Array<Dictionary<String,Any>> = []
         
         var dict: Dictionary<String,Any> = [:]
@@ -79,17 +76,17 @@ class data: UIView {
         dict.updateValue(Set(["Steaks 1 1/2-inch thick,Vegetable oil, to coat,Salt &  ground pepper"]), forKey: "items")
         
         arr.append(dict)
-        
-        let set1 = arr[0]["items"] as? Set<String> ?? Set<String>()
-        let set2 = arr[1]["items"] as? Set<String> ?? Set<String>()
-        let set3 = arr[2]["items"] as? Set<String> ?? Set<String>()
-        let set4 = arr[3]["items"] as? Set<String> ?? Set<String>()
-        let set5 = arr[4]["items"] as? Set<String> ?? Set<String>()
-        let set6 = arr[5]["items"] as? Set<String> ?? Set<String>()
-        let set7 = arr[6]["items"] as? Set<String> ?? Set<String>()
-        let set8 = arr[7]["items"] as? Set<String> ?? Set<String>()
-        var set9 = arr[8]["items"] as? Set<String> ?? Set<String>()
-        
+//        
+//        let set1 = arr[0]["items"] as? Set<String> ?? Set<String>()
+//        let set2 = arr[1]["items"] as? Set<String> ?? Set<String>()
+//        let set3 = arr[2]["items"] as? Set<String> ?? Set<String>()
+//        let set4 = arr[3]["items"] as? Set<String> ?? Set<String>()
+//        let set5 = arr[4]["items"] as? Set<String> ?? Set<String>()
+//        let set6 = arr[5]["items"] as? Set<String> ?? Set<String>()
+//        let set7 = arr[6]["items"] as? Set<String> ?? Set<String>()
+//        let set8 = arr[7]["items"] as? Set<String> ?? Set<String>()
+//        var set9 = arr[8]["items"] as? Set<String> ?? Set<String>()
+//        
         
     }
 
