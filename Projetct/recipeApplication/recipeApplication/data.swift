@@ -79,13 +79,13 @@ class Data: UIView {
         
         dict["title"] = "Title1"
         dict["directions"] = "Direction 1"
-        dict["items"] = Set(["Item1","Item2"])
+        dict["items"] = Set(["Cucumber","Rice","Butter"])
         
         arr.append(dict)
         
         dict["title"] = "Title2"
         dict["directions"] = "Direction 2"
-        dict["items"] = Set(["Item3","Item4"])
+        dict["items"] = Set(["Cucumber","Rice"])
         
         arr.append(dict)
 

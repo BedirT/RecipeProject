@@ -8,33 +8,40 @@
 
 import UIKit
 
-class matchesPageViewController: UIViewController {
+class matchesPageViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
-    @IBOutlet weak var tryingLabel: UILabel!
+    @IBOutlet weak var matchesTableView: UITableView!
     
-    let secondPage = ingredientsPage()
+    let tempData = ["First", "Second"]
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        //tryingLabel.text = secondPage.yourCheckBoxClicked
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        // REGISTER CUSTOM CELL
+        
+        let nib = UINib(nibName: "vwTblCellForMatches" , bundle: nil)
+        matchesTableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        //return myData.myFunc().counter
+        
+        return tempData.count
+        
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell: TblCellForMatches = self.matchesTableView.dequeueReusableCellWithIdentifier("cell") as! TblCellForMatches
+        cell.matchesLabel.text = tempData[indexPath.row]//data.myFunc().myset[indexPath.row]
+        cell.matchesImage.image = UIImage(named: tempData[indexPath.row])
+        
+        // if images name is same as in tableData put it in front of label
+        
+        return cell
+    }
 
 }

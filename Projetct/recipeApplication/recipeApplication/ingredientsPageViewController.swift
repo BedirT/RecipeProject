@@ -13,6 +13,41 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
    
     @IBOutlet var tableView: UITableView!
     
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    
+    func data (theNum: Int) -> (Set<String>, Dictionary<String,Any> ){
+       
+        var arr: Array<Dictionary<String,Any>> = []
+        var dict: Dictionary<String,Any> = [:]
+        
+        dict["title"] = "Title1"
+        dict["directions"] = "Direction1"
+        dict["items"] = Set(["Cucumber","Rice","Butter"])
+        
+        arr.append(dict)
+        
+        dict["title"] = "Title2"
+        dict["directions"] = "Direction2"
+        dict["items"] = Set(["Cucumber","Rice"])
+        
+        arr.append(dict)
+        
+        let sets = arr[theNum]["items"] as! Set<String>
+        let dictOfThat = arr[theNum] 
+        
+        return (sets,dictOfThat)
+    
+    }
+    
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    ////////////////////////////////    ////////////////////////////////
+    
     let tableData : [String] = ["Rice","Butter","Salmon","Egg","Eggplant","Onions","Garlic","Lemonjuice","Parsley","Chocolate" ,"Vanilla","Flour","Lettuce","Spinach", "Leaf","Cucumber", "Tomato", "Potatoes","Egg yolks","Egg whites","Steaks", "Vegetable oil"]
     
     // let data = Data().myFunc()
@@ -62,8 +97,11 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     @IBAction func thatsIt(sender: AnyObject) {
         
-        if choosenSet.isSubsetOf(tryingSet) == true {
-            myMatchedArray.insert(choosenSet, atIndex: 0)
+        for var i = 0 ; i < 2 ; i++ {
+            if choosenSet.isSubsetOf(data(i).0) == true {
+                self.myMatchedArray.insert(self.choosenSet, atIndex: 0)
+                print(data(i).1)
+            }
         }
         
     }

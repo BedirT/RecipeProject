@@ -186,24 +186,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_matches" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-8j-9YL">
+                                <rect key="frame" x="0.0" y="0.5" width="320" height="119.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CIg-8j-9YL" secondAttribute="height" multiplier="161:60" id="PTw-q8-fU7"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPF-gA-1Ne">
-                                <rect key="frame" x="116" y="398" width="89" height="89"/>
+                                <rect key="frame" x="271" y="88" width="29" height="29"/>
                                 <state key="normal" image="button_GoBack"/>
                                 <connections>
                                     <segue destination="bxB-NT-Wzm" kind="modal" id="iZX-vp-ePu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-dO-fIW">
-                                <rect key="frame" x="20" y="179" width="287" height="211"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="OST-nN-jrc">
+                                <rect key="frame" x="0.0" y="526" width="320" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OST-nN-jrc" secondAttribute="height" multiplier="319:42" id="XQC-85-Hok"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-tU-TuF">
+                                <rect key="frame" x="9" y="128" width="303" height="390"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XDj-GP-dir" id="INU-DU-2FG"/>
+                                    <outlet property="delegate" destination="XDj-GP-dir" id="X3t-kf-sKh"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iiM-i2-0uO" firstAttribute="top" secondItem="OST-nN-jrc" secondAttribute="bottom" id="1Tx-nu-tOy"/>
+                            <constraint firstAttribute="trailing" secondItem="CIg-8j-9YL" secondAttribute="trailing" id="ABl-Ez-K4l"/>
+                            <constraint firstItem="CIg-8j-9YL" firstAttribute="top" secondItem="hw0-Pc-dVf" secondAttribute="top" id="BuE-Q7-YHp"/>
+                            <constraint firstAttribute="trailing" secondItem="OST-nN-jrc" secondAttribute="trailing" id="mLW-uO-sv6"/>
+                            <constraint firstItem="CIg-8j-9YL" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="npk-72-mUr"/>
+                            <constraint firstItem="OST-nN-jrc" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="smb-vw-ag4"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="tryingLabel" destination="cEB-dO-fIW" id="0hb-yp-MkB"/>
+                        <outlet property="matchesTableView" destination="2dL-tU-TuF" id="nhA-xr-jKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQJ-W3-dVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,6 +243,7 @@
         <image name="button_MyFridge" width="582" height="70"/>
         <image name="downCover" width="641" height="84"/>
         <image name="upCover" width="641" height="304"/>
+        <image name="upCover_matches" width="641" height="240"/>
         <image name="upCover_myFridge" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>

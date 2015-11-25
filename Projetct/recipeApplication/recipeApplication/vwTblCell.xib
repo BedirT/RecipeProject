@@ -30,7 +30,7 @@
                 <outlet property="checkBoxInCell" destination="EAA-aH-Mmd" id="tZN-tu-3ao"/>
                 <outlet property="labelInCell" destination="agI-qX-jdq" id="0s9-qh-zzv"/>
             </connections>
-            <point key="canvasLocation" x="478" y="247"/>
+            <point key="canvasLocation" x="359" y="231"/>
         </tableViewCell>
     </objects>
 </document>
