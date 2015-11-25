@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "recipeApplication/ingredientsPageViewController.swift"
-            timestampString = "470178208.048233"
+            timestampString = "470185355.459501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "yourCheckBoxClicked(_:)"
             landmarkType = "5">
          </BreakpointContent>

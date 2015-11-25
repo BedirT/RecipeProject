@@ -87,7 +87,13 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     func yourCheckBoxClicked(cbx:UIButton){
         
         //choosenSet.insert(self.data.myFunc().myset[cbx.tag])// this is the checkbox label which was clicked
-        choosenSet.insert(self.tableData[cbx.tag])
+        let picked = self.tableData[cbx.tag]
+        if choosenSet.contains(picked) {
+            choosenSet.remove(picked) // uncheck
+        } else {
+            choosenSet.insert(picked) // check
+        }
+        //choosenSet.insert(self.tableData[cbx.tag])
         print(choosenSet)
     
     }
