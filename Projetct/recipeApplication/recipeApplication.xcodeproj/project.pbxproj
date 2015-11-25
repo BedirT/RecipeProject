@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82418DC1BEBD8D9001D03A9 /* data.swift */; };
+		F8928D7C1C035CED005E120E /* ingredientsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */; };
+		F8928D7E1C035E9F005E120E /* vwTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8928D7D1C035E9F005E120E /* vwTblCell.xib */; };
+		F8928D801C035EEA005E120E /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8928D7F1C035EEA005E120E /* TblCell.swift */; };
+		F8928D821C037987005E120E /* matchesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8928D811C037987005E120E /* matchesPageViewController.swift */; };
 		F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */; };
 		F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */; };
 		F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */; };
@@ -17,7 +21,6 @@
 		F8D6AECC1BDEA9F600FF7165 /* recipeApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AECB1BDEA9F600FF7165 /* recipeApplicationUITests.swift */; };
 		F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */; };
 		F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */; };
-		F8E5803F1BF2821B00102BC2 /* tableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E5803E1BF2821B00102BC2 /* tableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		F82418DC1BEBD8D9001D03A9 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientsPageViewController.swift; sourceTree = "<group>"; };
+		F8928D7D1C035E9F005E120E /* vwTblCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTblCell.xib; sourceTree = "<group>"; };
+		F8928D7F1C035EEA005E120E /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblCell.swift; sourceTree = "<group>"; };
+		F8928D811C037987005E120E /* matchesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matchesPageViewController.swift; sourceTree = "<group>"; };
 		F8D6AEA81BDEA9F600FF7165 /* recipeApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipeApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +61,6 @@
 		F8D6AECD1BDEA9F600FF7165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeItems.swift; sourceTree = "<group>"; };
 		F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
-		F8E5803E1BF2821B00102BC2 /* tableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +114,16 @@
 				F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */,
 				F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */,
 				F8D6AEAF1BDEA9F600FF7165 /* Main.storyboard */,
+				F8928D811C037987005E120E /* matchesPageViewController.swift */,
+				F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */,
+				F82418DC1BEBD8D9001D03A9 /* data.swift */,
+				F8D6AEB71BDEA9F600FF7165 /* Info.plist */,
 				F8D6AEB21BDEA9F600FF7165 /* Assets.xcassets */,
 				F8D6AEB41BDEA9F600FF7165 /* LaunchScreen.storyboard */,
 				F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */,
-				F8E5803E1BF2821B00102BC2 /* tableView.xib */,
+				F8928D7F1C035EEA005E120E /* TblCell.swift */,
+				F8928D7D1C035E9F005E120E /* vwTblCell.xib */,
 				F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */,
-				F82418DC1BEBD8D9001D03A9 /* data.swift */,
-				F8D6AEB71BDEA9F600FF7165 /* Info.plist */,
 			);
 			path = recipeApplication;
 			sourceTree = "<group>";
@@ -245,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D6AEB61BDEA9F600FF7165 /* LaunchScreen.storyboard in Resources */,
-				F8E5803F1BF2821B00102BC2 /* tableView.xib in Resources */,
+				F8928D7E1C035E9F005E120E /* vwTblCell.xib in Resources */,
 				F8D6AEB31BDEA9F600FF7165 /* Assets.xcassets in Resources */,
 				F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */,
 			);
@@ -275,8 +284,11 @@
 				F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */,
 				F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */,
 				F8D6AEAE1BDEA9F600FF7165 /* ViewController.swift in Sources */,
+				F8928D821C037987005E120E /* matchesPageViewController.swift in Sources */,
 				F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */,
+				F8928D801C035EEA005E120E /* TblCell.swift in Sources */,
 				F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */,
+				F8928D7C1C035CED005E120E /* ingredientsPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

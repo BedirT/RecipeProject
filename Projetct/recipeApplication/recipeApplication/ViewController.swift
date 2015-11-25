@@ -8,12 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    
-    @IBOutlet weak var ingredientTable: UITableView!
-    
-    
+class ViewController: UIViewController{
     
     ///////////////////////////////////
     /////////// SOCIAL LINKS //////////
@@ -36,8 +31,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
     }
+    
     
     
     override func didReceiveMemoryWarning() {
