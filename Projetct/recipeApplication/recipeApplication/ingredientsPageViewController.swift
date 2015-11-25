@@ -13,15 +13,9 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
    
     @IBOutlet var tableView: UITableView!
     
-    let tableData : [String] = ["First","Second","Third","Fourth","Fifth","Sixth"]
+    let tableData : [String] = ["Rice","Butter","Salmon","Egg","Eggplant","Onions","Garlic","Lemonjuice","Parsley","Chocolate" ,"Vanilla","Flour","Lettuce","Spinach", "Leaf","Cucumber", "Tomato", "Potatoes","Egg yolks","Egg whites","Steaks", "Vegetable oil"]
     
-    let data = Data().myFunc()
-    
-//    func aa() {
-//        for var i = 0 ; i < data.counter ; i++ {
-//            tableData.insert(data.myset, atIndex: <#T##Int#>)
-//        }
-//    }
+    // let data = Data().myFunc()
     
     var choosenSet : Set<String> = []
     
