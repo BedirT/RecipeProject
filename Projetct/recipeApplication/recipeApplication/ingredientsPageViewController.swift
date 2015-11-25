@@ -93,14 +93,14 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     var tryingSet : Set<String> = []
-    var myMatchedArray : Array<Set<String>> = []
+    var myMatchedArray : Array<Dictionary<String,Any>> = []
     
     @IBAction func thatsIt(sender: AnyObject) {
         
         for var i = 0 ; i < 2 ; i++ {
             if choosenSet.isSubsetOf(data(i).0) == true {
-                self.myMatchedArray.insert(self.choosenSet, atIndex: 0)
-                print(data(i).1)
+                self.myMatchedArray.insert(self.data(i).1, atIndex: 0)
+                print(myMatchedArray)
             }
         }
         

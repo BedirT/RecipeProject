@@ -12,7 +12,7 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
 
     @IBOutlet weak var matchesTableView: UITableView!
     
-    let tempData = ["First", "Second"]
+    let tempData = ["a"]
     
     override func viewDidLoad() {
         
