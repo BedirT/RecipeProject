@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQJ-W3-dVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="366"/>
+            <point key="canvasLocation" x="604" y="366"/>
         </scene>
     </scenes>
     <resources>
@@ -284,6 +284,6 @@
         <image name="upCover_myFridge" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iZX-vp-ePu"/>
+        <segue reference="Irl-wv-ZbJ"/>
     </inferredMetricsTieBreakers>
 </document>

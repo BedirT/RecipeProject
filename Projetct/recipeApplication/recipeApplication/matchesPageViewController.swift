@@ -12,7 +12,9 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
 
     @IBOutlet weak var matchesTableView: UITableView!
     
-    let tempData = ["a"]
+    var dataArray: Array<Dictionary<String,Any>> = []
+    var dataDictionary: Dictionary<String,Any> = [:]
+    
     
     override func viewDidLoad() {
         
@@ -29,16 +31,17 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
         
         //return myData.myFunc().counter
         
-        return tempData.count
+        return dataArray.count
         
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell: TblCellForMatches = self.matchesTableView.dequeueReusableCellWithIdentifier("cell") as! TblCellForMatches
-        cell.matchesLabel.text = tempData[indexPath.row]//data.myFunc().myset[indexPath.row]
-        cell.matchesImage.image = UIImage(named: tempData[indexPath.row])
+        cell.matchesLabel.text = dataArray[indexPath.row]["title"] as? String
+        //data.myFunc().myset[indexPath.row]
         
+        cell.matchesImage.image = UIImage(named: dataArray[indexPath.row]["title"] as! String)
         // if images name is same as in tableData put it in front of label
         
         return cell
