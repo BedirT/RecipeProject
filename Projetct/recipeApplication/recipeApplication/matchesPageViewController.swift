@@ -13,8 +13,6 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     @IBOutlet weak var matchesTableView: UITableView!
     
     var dataArray: Array<Dictionary<String,Any>> = []
-    var dataDictionary: Dictionary<String,Any> = [:]
-    
     
     override func viewDidLoad() {
         

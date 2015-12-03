@@ -117,14 +117,25 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let mathesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
+//        
+//        for var i = 0 ; i < myMatchedArray.count ; i++ {
+//            mathesPage.dataArray.append(myMatchedArray[i])
+//            
+//        }
+//    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let data = myMatchedArray[indexPath.row]
+        self.performSegueWithIdentifier("matchesPageViewController", sender: data)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let mathesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-        
-        for var i = 0 ; i < myMatchedArray.count ; i++ {
-            mathesPage.dataArray.append(myMatchedArray[i])
-            
+        if (segue.identifier == "matchesPageViewController") {
+            let actViewController:matchesPageViewController = segue.destinationViewController as! matchesPageViewController
+            actViewController.dataArray = sender as! Array<Dictionary<String,Any>>
         }
     }
-        
-
+    
 }
