@@ -128,7 +128,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let data = myMatchedArray[indexPath.row]
-        self.performSegueWithIdentifier("matchesPageViewController", sender: data)
+        self.performSegueWithIdentifier("matchesPageViewController", sender: thatsIt)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
