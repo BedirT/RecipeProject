@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -11,21 +12,21 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chI-dv-q1h" id="Uqb-HE-kle">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tku-UU-PO9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                        <rect key="frame" x="0.0" y="8" width="149" height="123.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Tku-UU-PO9" secondAttribute="height" multiplier="320:139" id="yhC-mu-Mq7"/>
+                            <constraint firstAttribute="width" secondItem="Tku-UU-PO9" secondAttribute="height" multiplier="320:139" constant="-135.31654676258989" id="yhC-mu-Mq7"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="matchesName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-5D-Ubc">
-                        <rect key="frame" x="101" y="85" width="219" height="55"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="matchesName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-5D-Ubc">
+                        <rect key="frame" x="148" y="8" width="172" height="123.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="iPU-5D-Ubc" secondAttribute="height" multiplier="217:54" id="Ru2-Hw-GbX"/>
-                            <constraint firstAttribute="height" constant="55" id="aUI-1B-nS1"/>
+                            <constraint firstAttribute="width" secondItem="iPU-5D-Ubc" secondAttribute="height" multiplier="217:54" constant="-324.28703703703701" id="Ru2-Hw-GbX"/>
+                            <constraint firstAttribute="height" constant="123.5" id="aUI-1B-nS1"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                         <color key="textColor" red="0.89092351169999995" green="0.35706208880000001" blue="0.1148532233" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,9 +37,10 @@
                 <constraints>
                     <constraint firstItem="Tku-UU-PO9" firstAttribute="leading" secondItem="Uqb-HE-kle" secondAttribute="leading" id="8eT-3g-aap"/>
                     <constraint firstAttribute="trailing" secondItem="iPU-5D-Ubc" secondAttribute="trailing" id="E1W-wS-A6I"/>
-                    <constraint firstItem="Tku-UU-PO9" firstAttribute="top" secondItem="Uqb-HE-kle" secondAttribute="top" id="pkB-gD-YIx"/>
-                    <constraint firstAttribute="bottom" secondItem="iPU-5D-Ubc" secondAttribute="bottom" id="rDK-Mx-Ts7"/>
-                    <constraint firstAttribute="trailing" secondItem="Tku-UU-PO9" secondAttribute="trailing" id="ybO-BG-WYf"/>
+                    <constraint firstItem="Tku-UU-PO9" firstAttribute="height" secondItem="iPU-5D-Ubc" secondAttribute="height" id="NhK-i9-PqS"/>
+                    <constraint firstItem="Tku-UU-PO9" firstAttribute="top" secondItem="Uqb-HE-kle" secondAttribute="top" constant="8" id="pkB-gD-YIx"/>
+                    <constraint firstAttribute="bottom" secondItem="iPU-5D-Ubc" secondAttribute="bottom" constant="8" id="rDK-Mx-Ts7"/>
+                    <constraint firstAttribute="trailing" secondItem="Tku-UU-PO9" secondAttribute="trailing" constant="171" id="ybO-BG-WYf"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

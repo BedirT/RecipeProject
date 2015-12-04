@@ -223,10 +223,10 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-tU-TuF">
-                                <rect key="frame" x="0.0" y="119" width="320" height="407"/>
+                                <rect key="frame" x="12" y="127.5" width="296" height="390.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="2dL-tU-TuF" secondAttribute="height" multiplier="320:407" id="ey6-Ky-Shz"/>
+                                    <constraint firstAttribute="width" secondItem="2dL-tU-TuF" secondAttribute="height" multiplier="320:407" constant="-11.027027027027032" id="ey6-Ky-Shz"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -252,13 +252,13 @@
                             <constraint firstAttribute="trailing" secondItem="CIg-8j-9YL" secondAttribute="trailing" id="ABl-Ez-K4l"/>
                             <constraint firstItem="CIg-8j-9YL" firstAttribute="top" secondItem="hw0-Pc-dVf" secondAttribute="top" id="BuE-Q7-YHp"/>
                             <constraint firstItem="qPF-gA-1Ne" firstAttribute="leading" secondItem="CIg-8j-9YL" secondAttribute="trailing" constant="-46" id="Gnu-CW-gC1"/>
-                            <constraint firstItem="2dL-tU-TuF" firstAttribute="top" secondItem="CIg-8j-9YL" secondAttribute="bottom" constant="-0.5" id="H6W-co-4cZ"/>
+                            <constraint firstItem="2dL-tU-TuF" firstAttribute="top" secondItem="CIg-8j-9YL" secondAttribute="bottom" constant="8" id="H6W-co-4cZ"/>
                             <constraint firstItem="qPF-gA-1Ne" firstAttribute="baseline" secondItem="CIg-8j-9YL" secondAttribute="baseline" constant="-8.5" id="SmY-v1-z2s"/>
                             <constraint firstAttribute="trailing" secondItem="OST-nN-jrc" secondAttribute="trailing" id="mLW-uO-sv6"/>
                             <constraint firstItem="CIg-8j-9YL" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="npk-72-mUr"/>
-                            <constraint firstAttribute="trailing" secondItem="2dL-tU-TuF" secondAttribute="trailing" id="ppB-tY-9yD"/>
+                            <constraint firstAttribute="trailing" secondItem="2dL-tU-TuF" secondAttribute="trailing" constant="12" id="ppB-tY-9yD"/>
                             <constraint firstItem="OST-nN-jrc" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="smb-vw-ag4"/>
-                            <constraint firstItem="2dL-tU-TuF" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="uqI-rD-DsU"/>
+                            <constraint firstItem="2dL-tU-TuF" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" constant="12" id="uqI-rD-DsU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Znf-61-cUv"/>

@@ -50,8 +50,6 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     let tableData : [String] = ["Rice","Butter","Salmon","Egg","Eggplant","Onions","Garlic","Lemonjuice","Parsley","Chocolate" ,"Vanilla","Flour","Lettuce","Spinach", "Leaf","Cucumber", "Tomato", "Potatoes","Egg yolks","Egg whites","Steaks", "Vegetable oil"]
     
-    // let data = Data().myFunc()
-    
     var choosenSet : Set<String> = []
     
     override func viewDidLoad() {
@@ -65,9 +63,6 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        //return myData.myFunc().counter
-        
         return tableData.count
     }
     
@@ -77,28 +72,21 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         cell.labelInCell.text = tableData[indexPath.row]//data.myFunc().myset[indexPath.row]
         cell.checkBoxInCell.tag = indexPath.row
         cell.checkBoxInCell.addTarget(self, action: Selector("yourCheckBoxClicked:"), forControlEvents: .TouchUpInside)
-        
-        // cell.images.image = UIImage(named: tableData[indexPath.row])
-        // if images name is same as in tableData put it in front of label
-        
         return cell
     }
     
     func yourCheckBoxClicked(cbx:UIButton){
         
-        //choosenSet.insert(self.data.myFunc().myset[cbx.tag])// this is the checkbox label which was clicked
         let picked = self.tableData[cbx.tag]
         if choosenSet.contains(picked) {
             choosenSet.remove(picked) // uncheck
         } else {
             choosenSet.insert(picked) // check
         }
-        //choosenSet.insert(self.tableData[cbx.tag])
         print(choosenSet)
     
     }
     
-    var tryingSet : Set<String> = []
     var myMatchedArray : Array<Dictionary<String,Any>> = []
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -107,12 +95,10 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         for var i = 0 ; i < 2 ; i++ {
             if choosenSet.isSubsetOf(data(i).0) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: i)
-                //print(myMatchedArray)
             }
         }
         
         for var i = 0 ; i < myMatchedArray.count ; i++ {
-            //print(myMatchedArray[i])
             matchesPage.dataArray.append(myMatchedArray[i])
         }
     }
@@ -128,14 +114,10 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
 //        let data = myMatchedArray[indexPath.row]
 //        self.performSegueWithIdentifier("matchesPageViewController", sender: data as? AnyObject)
 //    }
-    
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if (segue.identifier == "matchesPageViewController") {
 //            let actViewController:matchesPageViewController = segue.destinationViewController as! matchesPageViewController
 //            actViewController.dataArray = sender as! Array<Dictionary<String,Any>>
-//            
-//            
-//            
 //        }
 //    }
     
