@@ -23,13 +23,13 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         var arr: Array<Dictionary<String,Any>> = []
         var dict: Dictionary<String,Any> = [:]
         
-        dict["title"] = "Title1"
+        dict["title"] = "Baba Ghanoush"
         dict["directions"] = "Direction1"
         dict["items"] = Set(["Cucumber","Rice","Butter"])
         
         arr.append(dict)
         
-        dict["title"] = "Title2"
+        dict["title"] = "Boiled Eggs"
         dict["directions"] = "Direction2"
         dict["items"] = Set(["Cucumber","Rice"])
         
