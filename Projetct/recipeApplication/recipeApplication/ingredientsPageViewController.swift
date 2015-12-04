@@ -104,14 +104,6 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
         
-        for var i = 0 ; i < myMatchedArray.count ; i++ {
-            print(myMatchedArray[i])
-            matchesPage.dataArray[i] = myMatchedArray[i]
-        }
-    }
-    
-    @IBAction func thatsIt(sender: AnyObject) {
-        
         for var i = 0 ; i < 2 ; i++ {
             if choosenSet.isSubsetOf(data(i).0) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: i)
@@ -119,6 +111,10 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
             }
         }
         
+        for var i = 0 ; i < myMatchedArray.count ; i++ {
+            //print(myMatchedArray[i])
+            matchesPage.dataArray.append(myMatchedArray[i])
+        }
     }
     
     override func didReceiveMemoryWarning() {

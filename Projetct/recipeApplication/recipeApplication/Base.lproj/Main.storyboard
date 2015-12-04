@@ -145,7 +145,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="thatsIt:" destination="bxB-NT-Wzm" eventType="touchUpInside" id="A61-Yp-YWi"/>
                                     <segue destination="XDj-GP-dir" kind="modal" id="ENa-qQ-hBo"/>
                                 </connections>
                             </button>
