@@ -22,6 +22,7 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
         
         let nib = UINib(nibName: "vwTblCellForMatches" , bundle: nil)
         matchesTableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        print(dataArray)
         
     }
     

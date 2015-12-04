@@ -262,6 +262,7 @@
                             <constraint firstItem="2dL-tU-TuF" firstAttribute="leading" secondItem="hw0-Pc-dVf" secondAttribute="leading" id="uqI-rD-DsU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Znf-61-cUv"/>
                     <connections>
                         <outlet property="matchesTableView" destination="2dL-tU-TuF" id="nhA-xr-jKg"/>
                     </connections>

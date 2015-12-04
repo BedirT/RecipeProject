@@ -101,12 +101,21 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     var tryingSet : Set<String> = []
     var myMatchedArray : Array<Dictionary<String,Any>> = []
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
+        
+        for var i = 0 ; i < myMatchedArray.count ; i++ {
+            print(myMatchedArray[i])
+            matchesPage.dataArray[i] = myMatchedArray[i]
+        }
+    }
+    
     @IBAction func thatsIt(sender: AnyObject) {
         
         for var i = 0 ; i < 2 ; i++ {
             if choosenSet.isSubsetOf(data(i).0) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: i)
-                print(myMatchedArray)
+                //print(myMatchedArray)
             }
         }
         
@@ -117,25 +126,21 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let data = myMatchedArray[indexPath.row]
+//        self.performSegueWithIdentifier("matchesPageViewController", sender: data as? AnyObject)
+//    }
+    
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        let mathesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-//        
-//        for var i = 0 ; i < myMatchedArray.count ; i++ {
-//            mathesPage.dataArray.append(myMatchedArray[i])
+//        if (segue.identifier == "matchesPageViewController") {
+//            let actViewController:matchesPageViewController = segue.destinationViewController as! matchesPageViewController
+//            actViewController.dataArray = sender as! Array<Dictionary<String,Any>>
+//            
+//            
 //            
 //        }
 //    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let data = myMatchedArray[indexPath.row]
-        self.performSegueWithIdentifier("matchesPageViewController", sender: thatsIt)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "matchesPageViewController") {
-            let actViewController:matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-            actViewController.dataArray = sender as! Array<Dictionary<String,Any>>
-        }
-    }
     
 }
