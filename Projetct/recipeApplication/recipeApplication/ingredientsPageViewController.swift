@@ -73,7 +73,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         dict["title"] = "Pan Seared Steak"
         dict["directions"] = "Direction9"
-        dict["items"] = Set(["Steaks","Vegetable oil"])
+        dict["items"] = Set(["Steak","Vegetable oil"])
         
         arr.append(dict)
         
@@ -173,11 +173,11 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
         
-        for var i = 0 ; i < data(0).2 ; i++ {
+        for var i = 0, a = 0 ; i < data(0).2 ; i++ {
             print("this")
             if choosenSet.isSubsetOf(data(i).0) == true {
-                self.myMatchedArray.insert(self.data(i).1, atIndex: i)
-                
+                self.myMatchedArray.insert(self.data(i).1, atIndex: a)
+                a++
             }
         }
         
