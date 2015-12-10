@@ -43,11 +43,12 @@
                     <constraint firstAttribute="trailing" secondItem="Tku-UU-PO9" secondAttribute="trailing" constant="171" id="ybO-BG-WYf"/>
                 </constraints>
             </tableViewCellContentView>
+            <gestureRecognizers/>
             <connections>
                 <outlet property="matchesImage" destination="Tku-UU-PO9" id="knz-f9-521"/>
                 <outlet property="matchesLabel" destination="iPU-5D-Ubc" id="jZI-Uz-IaO"/>
             </connections>
-            <point key="canvasLocation" x="299" y="240"/>
+            <point key="canvasLocation" x="332" y="249"/>
         </tableViewCell>
     </objects>
 </document>

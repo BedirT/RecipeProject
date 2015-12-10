@@ -51,19 +51,19 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let recipesPage: recipesPageViewController = segue.destinationViewController as! recipesPageViewController
-        
-        if let selectedCell = sender as? TblCellForMatches {
-            let indexPath = matchesTableView.indexPathForCell(selectedCell)!
-            let selectedRecipe = dataArray[indexPath.row]
-            //recipesPage.meal = selectedRecipe
-            recipesPage.recipeTitle.text = selectedRecipe["title"] as? String
+        if let identifier = segue.identifier where identifier == "mySegueForRecipes" {
+            let recipesPage: recipesPageViewController = segue.destinationViewController as! recipesPageViewController
+            
+            recipesPage.recipeTitle.text = "This is done"
             //recipesPage.recipeDescription.text =
             //recipesPage.recipeImage.image =
-
+            
+            
         }
-        
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("mySegueForRecipes", sender: indexPath )
+    }
     
 }
