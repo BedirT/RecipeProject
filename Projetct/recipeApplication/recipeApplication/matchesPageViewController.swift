@@ -49,4 +49,21 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 140
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let recipesPage: recipesPageViewController = segue.destinationViewController as! recipesPageViewController
+        
+        if let selectedCell = sender as? TblCellForMatches {
+            let indexPath = matchesTableView.indexPathForCell(selectedCell)!
+            let selectedRecipe = dataArray[indexPath.row]
+            //recipesPage.meal = selectedRecipe
+            recipesPage.recipeTitle.text = selectedRecipe["title"] as? String
+            //recipesPage.recipeDescription.text =
+            //recipesPage.recipeImage.image =
+
+        }
+        
+    }
+    
+    
 }

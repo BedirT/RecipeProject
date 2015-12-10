@@ -222,18 +222,6 @@
                                     <constraint firstAttribute="width" secondItem="OST-nN-jrc" secondAttribute="height" multiplier="319:42" id="XQC-85-Hok"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-tU-TuF">
-                                <rect key="frame" x="12" y="127.5" width="296" height="390.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2dL-tU-TuF" secondAttribute="height" multiplier="320:407" constant="-11.027027027027032" id="ey6-Ky-Shz"/>
-                                </constraints>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="XDj-GP-dir" id="INU-DU-2FG"/>
-                                    <outlet property="delegate" destination="XDj-GP-dir" id="X3t-kf-sKh"/>
-                                </connections>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPF-gA-1Ne">
                                 <rect key="frame" x="274" y="85" width="34" height="34"/>
                                 <constraints>
@@ -245,6 +233,19 @@
                                     <segue destination="bxB-NT-Wzm" kind="modal" id="iZX-vp-ePu"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-tU-TuF">
+                                <rect key="frame" x="12" y="127" width="296" height="390.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2dL-tU-TuF" secondAttribute="height" multiplier="320:407" constant="-11.027027027027032" id="ey6-Ky-Shz"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XDj-GP-dir" id="INU-DU-2FG"/>
+                                    <outlet property="delegate" destination="XDj-GP-dir" id="X3t-kf-sKh"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -264,11 +265,87 @@
                     <navigationItem key="navigationItem" id="Znf-61-cUv"/>
                     <connections>
                         <outlet property="matchesTableView" destination="2dL-tU-TuF" id="nhA-xr-jKg"/>
+                        <segue destination="gIt-gP-Kbf" kind="modal" identifier="goingRecipesSegue" id="45A-fd-a4k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQJ-W3-dVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="366"/>
+        </scene>
+        <!--Recipes Page View Controller-->
+        <scene sceneID="lHe-b9-rwt">
+            <objects>
+                <viewController id="gIt-gP-Kbf" customClass="recipesPageViewController" customModule="recipeApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J3Y-xP-PjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qTZ-96-07z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yeL-sW-9tH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="upCover_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-Z4-6AN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UqP-Z4-6AN" secondAttribute="height" multiplier="320:119" id="VQm-iD-bk7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="M8l-x3-fln">
+                                <rect key="frame" x="0.0" y="527" width="322" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M8l-x3-fln" secondAttribute="height" multiplier="322:41" id="Fat-lc-4eO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-hu-3EN">
+                                <rect key="frame" x="272" y="85" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZUx-hu-3EN" secondAttribute="height" multiplier="1:1" id="jU5-h9-eDB"/>
+                                </constraints>
+                                <state key="normal" image="button_GoBack2"/>
+                                <connections>
+                                    <segue destination="XDj-GP-dir" kind="modal" id="81e-HD-a4S"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRy-8i-AVx">
+                                <rect key="frame" x="0.0" y="118" width="320" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naf-tU-iW5">
+                                <rect key="frame" x="9" y="326" width="302" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.89092351169999995" green="0.35706208880000001" blue="0.1148532233" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9VB-PF-heY">
+                                <rect key="frame" x="9" y="360" width="302" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.89092351169999995" green="0.35706208880000001" blue="0.1148532233" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.69019607839999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="M8l-x3-fln" secondAttribute="trailing" constant="-2" id="BWf-wg-PHx"/>
+                            <constraint firstAttribute="trailing" secondItem="UqP-Z4-6AN" secondAttribute="trailing" id="Ezf-fu-c8M"/>
+                            <constraint firstItem="UqP-Z4-6AN" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="ckW-y6-dT6"/>
+                            <constraint firstItem="M8l-x3-fln" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="gep-tq-PLA"/>
+                            <constraint firstItem="qTZ-96-07z" firstAttribute="top" secondItem="M8l-x3-fln" secondAttribute="bottom" id="lIb-Co-deZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUx-hu-3EN" secondAttribute="trailing" constant="14" id="mOT-6E-Zgw"/>
+                            <constraint firstItem="ZUx-hu-3EN" firstAttribute="top" secondItem="J3Y-xP-PjO" secondAttribute="bottom" constant="65" id="yEl-Tv-Wpd"/>
+                            <constraint firstItem="M8l-x3-fln" firstAttribute="top" secondItem="ZUx-hu-3EN" secondAttribute="bottom" constant="408" id="zVX-46-iqb"/>
+                            <constraint firstItem="UqP-Z4-6AN" firstAttribute="top" secondItem="yeL-sW-9tH" secondAttribute="top" id="zap-iW-cfQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recipeDescription" destination="9VB-PF-heY" id="o61-At-7Nb"/>
+                        <outlet property="recipeImage" destination="uRy-8i-AVx" id="Vui-Wx-Hpl"/>
+                        <outlet property="recipeTitle" destination="naf-tU-iW5" id="Lda-za-tdi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwX-pH-cVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="366"/>
         </scene>
     </scenes>
     <resources>
@@ -282,8 +359,10 @@
         <image name="upCover" width="641" height="304"/>
         <image name="upCover_matches" width="641" height="240"/>
         <image name="upCover_myFridge" width="641" height="240"/>
+        <image name="upCover_recipe" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Irl-wv-ZbJ"/>
+        <segue reference="iZX-vp-ePu"/>
+        <segue reference="ENa-qQ-hBo"/>
     </inferredMetricsTieBreakers>
 </document>
