@@ -23,6 +23,7 @@
 		F8D6AECC1BDEA9F600FF7165 /* recipeApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AECB1BDEA9F600FF7165 /* recipeApplicationUITests.swift */; };
 		F8D6AEDC1BDEAB1000FF7165 /* recipeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */; };
 		F8D6AEDE1BDEAB3600FF7165 /* checkBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */; };
+		F8F392C31C18D736009D63B9 /* recipesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F392C21C18D736009D63B9 /* recipesPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F8D6AECD1BDEA9F600FF7165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D6AEDA1BDEAB1000FF7165 /* recipeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeItems.swift; sourceTree = "<group>"; };
 		F8D6AEDD1BDEAB3600FF7165 /* checkBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkBox.swift; sourceTree = "<group>"; };
+		F8F392C21C18D736009D63B9 /* recipesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipesPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F8D6AEAD1BDEA9F600FF7165 /* ViewController.swift */,
 				F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */,
 				F8928D811C037987005E120E /* matchesPageViewController.swift */,
+				F8F392C21C18D736009D63B9 /* recipesPageViewController.swift */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				F8928D801C035EEA005E120E /* TblCell.swift in Sources */,
 				F8D6AEAC1BDEA9F600FF7165 /* AppDelegate.swift in Sources */,
 				F8928D7C1C035CED005E120E /* ingredientsPageViewController.swift in Sources */,
+				F8F392C31C18D736009D63B9 /* recipesPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
