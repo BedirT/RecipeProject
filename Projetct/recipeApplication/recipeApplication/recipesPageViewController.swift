@@ -14,12 +14,16 @@ class recipesPageViewController: UIViewController {
     @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var recipeDescription: UITextView!
     
-    
-    
-    
+    var labelTitle : String = ""
+    var labelDescription : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        recipeTitle.text = labelTitle
+        recipeDescription.text = labelDescription
+        recipeImage.image = UIImage(named: labelTitle)
+        
+        
         // Do any additional setup after loading the view.
     }
 

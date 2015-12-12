@@ -59,7 +59,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         arr.append(dict)
         
-        dict["title"] = "Fried Mashed Patatoes"
+        dict["title"] = "Fried Mashed Potatoes"
         dict["directions"] = "Direction7"
         dict["items"] = Set(["Potato","Onion"])
         

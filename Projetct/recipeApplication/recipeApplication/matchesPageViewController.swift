@@ -52,10 +52,10 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier where identifier == "mySegueForRecipes" {
             let recipesPage: recipesPageViewController = segue.destinationViewController as! recipesPageViewController
-            //let indexpath = sender as? NSIndexPath
-            recipesPage.recipeTitle.text = "This is done"
-            //recipesPage.recipeDescription.text =
-            //recipesPage.recipeImage.image =
+            let indexpath = sender as? NSIndexPath
+            recipesPage.labelTitle = dataArray[(indexpath?.row)!]["title"] as! String
+            recipesPage.labelDescription = dataArray[(indexpath?.row)!]["directions"] as! String
+
             
             
         }

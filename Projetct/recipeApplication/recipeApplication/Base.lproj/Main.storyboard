@@ -297,9 +297,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUx-hu-3EN">
-                                <rect key="frame" x="272" y="85" width="34" height="34"/>
+                                <rect key="frame" x="272" y="84" width="34" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZUx-hu-3EN" secondAttribute="height" multiplier="1:1" id="jU5-h9-eDB"/>
+                                    <constraint firstAttribute="width" constant="34" id="6Lx-q9-P6p"/>
+                                    <constraint firstAttribute="height" constant="34" id="C06-Dq-sdw"/>
                                 </constraints>
                                 <state key="normal" image="button_GoBack2"/>
                                 <connections>
@@ -339,19 +340,18 @@
                             <constraint firstAttribute="trailing" secondItem="M8l-x3-fln" secondAttribute="trailing" constant="-2" id="BWf-wg-PHx"/>
                             <constraint firstAttribute="trailing" secondItem="UqP-Z4-6AN" secondAttribute="trailing" id="Ezf-fu-c8M"/>
                             <constraint firstItem="uRy-8i-AVx" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="IjO-ec-cFr"/>
+                            <constraint firstItem="ZUx-hu-3EN" firstAttribute="top" secondItem="J3Y-xP-PjO" secondAttribute="bottom" constant="64" id="Ime-jL-dQY"/>
                             <constraint firstItem="naf-tU-iW5" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" constant="9" id="aw1-JI-siR"/>
                             <constraint firstItem="9VB-PF-heY" firstAttribute="top" secondItem="naf-tU-iW5" secondAttribute="bottom" constant="2" id="cYh-5y-Gfo"/>
-                            <constraint firstItem="uRy-8i-AVx" firstAttribute="top" secondItem="ZUx-hu-3EN" secondAttribute="bottom" id="cg9-h5-WCZ"/>
                             <constraint firstItem="UqP-Z4-6AN" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="ckW-y6-dT6"/>
                             <constraint firstItem="naf-tU-iW5" firstAttribute="top" secondItem="uRy-8i-AVx" secondAttribute="bottom" constant="7" id="gEm-NN-ZPe"/>
                             <constraint firstItem="M8l-x3-fln" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="gep-tq-PLA"/>
                             <constraint firstItem="qTZ-96-07z" firstAttribute="top" secondItem="M8l-x3-fln" secondAttribute="bottom" id="lIb-Co-deZ"/>
-                            <constraint firstAttribute="trailing" secondItem="ZUx-hu-3EN" secondAttribute="trailing" constant="14" id="mOT-6E-Zgw"/>
+                            <constraint firstItem="uRy-8i-AVx" firstAttribute="top" secondItem="ZUx-hu-3EN" secondAttribute="bottom" constant="1" id="ogz-o7-Rnx"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUx-hu-3EN" secondAttribute="trailing" constant="14" id="pDD-BJ-mqp"/>
                             <constraint firstAttribute="trailing" secondItem="naf-tU-iW5" secondAttribute="trailing" constant="9" id="rvK-Ku-pgU"/>
                             <constraint firstItem="9VB-PF-heY" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" constant="9" id="u2x-BM-fck"/>
                             <constraint firstAttribute="trailing" secondItem="uRy-8i-AVx" secondAttribute="trailing" id="u9g-dy-leu"/>
-                            <constraint firstItem="ZUx-hu-3EN" firstAttribute="top" secondItem="J3Y-xP-PjO" secondAttribute="bottom" constant="65" id="yEl-Tv-Wpd"/>
-                            <constraint firstItem="M8l-x3-fln" firstAttribute="top" secondItem="ZUx-hu-3EN" secondAttribute="bottom" constant="408" id="zVX-46-iqb"/>
                             <constraint firstItem="UqP-Z4-6AN" firstAttribute="top" secondItem="yeL-sW-9tH" secondAttribute="top" id="zap-iW-cfQ"/>
                         </constraints>
                     </view>
