@@ -92,7 +92,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
         
-        for var i = 0 ; i < 2 ; i++ {
+        for var i = 0 ; i < 10 ; i++ {
             if choosenSet.isSubsetOf(data(i).0) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: i)
             }
