@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class matchesPageViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -27,8 +28,6 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        //return myData.myFunc().counter
         
         return dataArray.count
         
@@ -53,7 +52,7 @@ class matchesPageViewController: UIViewController,UITableViewDataSource,UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier where identifier == "mySegueForRecipes" {
             let recipesPage: recipesPageViewController = segue.destinationViewController as! recipesPageViewController
-            
+            //let indexpath = sender as? NSIndexPath
             recipesPage.recipeTitle.text = "This is done"
             //recipesPage.recipeDescription.text =
             //recipesPage.recipeImage.image =
