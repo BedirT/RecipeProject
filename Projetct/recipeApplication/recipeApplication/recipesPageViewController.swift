@@ -12,13 +12,15 @@ class recipesPageViewController: UIViewController {
 
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeTitle: UILabel!
-    @IBOutlet weak var recipeDescription: UITextView!
+    @IBOutlet weak var recipeDescription: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var labelTitle : String = ""
     var labelDescription : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.contentSize.height = 200
         recipeTitle.text = labelTitle
         recipeDescription.text = labelDescription
         recipeImage.image = UIImage(named: labelTitle)

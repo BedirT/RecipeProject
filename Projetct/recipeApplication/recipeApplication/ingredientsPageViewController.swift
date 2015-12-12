@@ -172,10 +172,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-        
-
-        for var i = 0 ; i < 10 ; i++ {
-
+       
         for var i = 0, a = 0 ; i < data(0).2 ; i++ {
             print("this")
 
@@ -191,7 +188,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
     }
     
-    func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -214,5 +211,4 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     //    }
     
 
-    }
 }

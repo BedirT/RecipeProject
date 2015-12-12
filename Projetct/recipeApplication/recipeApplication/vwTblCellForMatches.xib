@@ -48,7 +48,7 @@
                 <outlet property="matchesImage" destination="Tku-UU-PO9" id="knz-f9-521"/>
                 <outlet property="matchesLabel" destination="iPU-5D-Ubc" id="jZI-Uz-IaO"/>
             </connections>
-            <point key="canvasLocation" x="332" y="249"/>
+            <point key="canvasLocation" x="290" y="269"/>
         </tableViewCell>
     </objects>
 </document>
