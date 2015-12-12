@@ -173,8 +173,12 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
         
+
+        for var i = 0 ; i < 10 ; i++ {
+
         for var i = 0, a = 0 ; i < data(0).2 ; i++ {
             print("this")
+
             if choosenSet.isSubsetOf(data(i).0) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: a)
                 a++
@@ -187,7 +191,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
     }
     
-    override func didReceiveMemoryWarning() {
+    func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -209,4 +213,6 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     //        }
     //    }
     
+
+    }
 }
