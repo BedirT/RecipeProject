@@ -174,9 +174,8 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
        
         for var i = 0, a = 0 ; i < data(0).2 ; i++ {
-            print("this")
-
-            if choosenSet.isSubsetOf(data(i).0) == true {
+            
+            if data(i).0.isSubsetOf(choosenSet) == true {
                 self.myMatchedArray.insert(self.data(i).1, atIndex: a)
                 a++
             }
