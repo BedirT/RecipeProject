@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -31,11 +31,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-cJ-MVG">
-                                <rect key="frame" x="20" y="169" width="280" height="34"/>
+                                <rect key="frame" x="20" y="169" width="280" height="47"/>
+                                <color key="backgroundColor" red="0.89092351169999995" green="0.35706208880000001" blue="0.1148532233" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="hFj-cJ-MVG" secondAttribute="height" multiplier="141:17" id="hHZ-sP-qBJ"/>
+                                    <constraint firstAttribute="width" secondItem="hFj-cJ-MVG" secondAttribute="height" multiplier="141:17" constant="-109.82352941176475" id="hHZ-sP-qBJ"/>
                                 </constraints>
-                                <state key="normal" image="button_MyFridge"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="My Fridge"/>
                                 <connections>
                                     <segue destination="bxB-NT-Wzm" kind="modal" id="Irl-wv-ZbJ"/>
                                 </connections>
@@ -290,6 +292,12 @@
                                     <constraint firstAttribute="width" secondItem="UqP-Z4-6AN" secondAttribute="height" multiplier="320:119" id="VQm-iD-bk7"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRy-8i-AVx">
+                                <rect key="frame" x="0.0" y="119" width="320" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uRy-8i-AVx" secondAttribute="height" multiplier="8:5" constant="-59.200000000000045" id="ajU-TY-tRz"/>
+                                </constraints>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="M8l-x3-fln">
                                 <rect key="frame" x="0.0" y="527" width="322" height="41"/>
                                 <constraints>
@@ -297,20 +305,15 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naf-tU-iW5">
-                                <rect key="frame" x="9" y="324" width="302" height="32"/>
+                                <rect key="frame" x="0.0" y="317" width="320" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.96752891180108436" blue="0.92368164845929468" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="naf-tU-iW5" secondAttribute="height" multiplier="151:16" id="EWw-LF-JyA"/>
+                                    <constraint firstAttribute="width" secondItem="naf-tU-iW5" secondAttribute="height" multiplier="151:16" constant="-48.0625" id="EWw-LF-JyA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.89092351169999995" green="0.35706208880000001" blue="0.1148532233" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRy-8i-AVx">
-                                <rect key="frame" x="0.0" y="119" width="320" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uRy-8i-AVx" secondAttribute="height" multiplier="8:5" id="ajU-TY-tRz"/>
-                                </constraints>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wlt-uS-LeS">
                                 <rect key="frame" x="9" y="364" width="302" height="155"/>
                                 <subviews>
@@ -343,13 +346,13 @@
                             <constraint firstItem="uRy-8i-AVx" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="IjO-ec-cFr"/>
                             <constraint firstAttribute="trailing" secondItem="aJh-Pm-Jth" secondAttribute="trailing" constant="9" id="Jzb-CA-5my"/>
                             <constraint firstItem="uRy-8i-AVx" firstAttribute="centerX" secondItem="Wlt-uS-LeS" secondAttribute="centerX" id="UPS-Ez-lIL"/>
-                            <constraint firstItem="naf-tU-iW5" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" constant="9" id="aw1-JI-siR"/>
+                            <constraint firstItem="naf-tU-iW5" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="aw1-JI-siR"/>
                             <constraint firstItem="UqP-Z4-6AN" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="ckW-y6-dT6"/>
-                            <constraint firstItem="naf-tU-iW5" firstAttribute="top" secondItem="uRy-8i-AVx" secondAttribute="bottom" constant="5" id="gEm-NN-ZPe"/>
+                            <constraint firstItem="naf-tU-iW5" firstAttribute="top" secondItem="uRy-8i-AVx" secondAttribute="bottom" constant="-39" id="gEm-NN-ZPe"/>
                             <constraint firstItem="M8l-x3-fln" firstAttribute="leading" secondItem="yeL-sW-9tH" secondAttribute="leading" id="gep-tq-PLA"/>
                             <constraint firstItem="aJh-Pm-Jth" firstAttribute="baseline" secondItem="UqP-Z4-6AN" secondAttribute="baseline" constant="-3" id="l6w-Zd-GJL"/>
                             <constraint firstItem="qTZ-96-07z" firstAttribute="top" secondItem="M8l-x3-fln" secondAttribute="bottom" id="lIb-Co-deZ"/>
-                            <constraint firstAttribute="trailing" secondItem="naf-tU-iW5" secondAttribute="trailing" constant="9" id="rvK-Ku-pgU"/>
+                            <constraint firstAttribute="trailing" secondItem="naf-tU-iW5" secondAttribute="trailing" id="rvK-Ku-pgU"/>
                             <constraint firstAttribute="trailing" secondItem="uRy-8i-AVx" secondAttribute="trailing" id="u9g-dy-leu"/>
                             <constraint firstItem="uRy-8i-AVx" firstAttribute="top" secondItem="UqP-Z4-6AN" secondAttribute="bottom" id="wN1-66-BAU"/>
                             <constraint firstItem="UqP-Z4-6AN" firstAttribute="top" secondItem="yeL-sW-9tH" secondAttribute="top" id="zap-iW-cfQ"/>
@@ -374,7 +377,6 @@
         <image name="Twitter copy" width="255" height="256"/>
         <image name="Youtube New" width="256" height="256"/>
         <image name="button_GoBack2" width="223" height="223"/>
-        <image name="button_MyFridge" width="582" height="70"/>
         <image name="downCover" width="641" height="84"/>
         <image name="upCover" width="641" height="304"/>
         <image name="upCover_matches" width="641" height="240"/>
@@ -382,6 +384,6 @@
         <image name="upCover_recipe" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Irl-wv-ZbJ"/>
+        <segue reference="JDE-Qa-8lF"/>
     </inferredMetricsTieBreakers>
 </document>
