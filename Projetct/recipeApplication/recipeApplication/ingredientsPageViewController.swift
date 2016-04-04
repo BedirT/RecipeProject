@@ -171,20 +171,23 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     var myMatchedArray : Array<Dictionary<String,Any>> = []
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-       
-        for var i = 0, a = 0 ; i < data(0).2 ; i++ {
+        if let matchesPage = segue.destinationViewController as? matchesPageViewController {
+            let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
             
-            if data(i).0.isSubsetOf(choosenSet) == true {
-                self.myMatchedArray.insert(self.data(i).1, atIndex: a)
-                a++
+            for var i = 0, a = 0 ; i < data(0).2 ; i++ {
+                
+                if data(i).0.isSubsetOf(choosenSet) == true {
+                    self.myMatchedArray.insert(self.data(i).1, atIndex: a)
+                    a++
+                }
+            }
+            
+            for var i = 0 ; i < myMatchedArray.count ; i++ {
+                //print(myMatchedArray[i])
+                matchesPage.dataArray.append(myMatchedArray[i])
             }
         }
         
-        for var i = 0 ; i < myMatchedArray.count ; i++ {
-            //print(myMatchedArray[i])
-            matchesPage.dataArray.append(myMatchedArray[i])
-        }
     }
     
     override func didReceiveMemoryWarning() {
