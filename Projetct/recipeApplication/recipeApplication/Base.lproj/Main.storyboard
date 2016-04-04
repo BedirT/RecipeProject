@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8oM-24-1zt">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -107,6 +107,7 @@
                             <constraint firstItem="cD9-da-aGg" firstAttribute="leading" secondItem="iea-C8-w3f" secondAttribute="leading" id="ykO-tI-bOc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OxG-vS-mYd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mf2-dz-QE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +148,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XDj-GP-dir" kind="modal" id="ENa-qQ-hBo"/>
+                                    <segue destination="XDj-GP-dir" kind="modal" identifier="mySegueForRecipes" id="ENa-qQ-hBo"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="downCover" translatesAutoresizingMaskIntoConstraints="NO" id="IS6-1M-BDM">
@@ -170,7 +171,7 @@
                                 </constraints>
                                 <state key="normal" image="button_GoBack2"/>
                                 <connections>
-                                    <segue destination="8oM-24-1zt" kind="modal" id="nHM-Aq-LJ4"/>
+                                    <segue destination="8oM-24-1zt" kind="modal" id="WMl-TH-o40"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvt-Fd-36v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="366"/>
+            <point key="canvasLocation" x="150" y="366"/>
         </scene>
         <!--Matches Page View Controller-->
         <scene sceneID="HlJ-8E-q8T">
@@ -384,6 +385,6 @@
         <image name="upCover_recipe" width="641" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JDE-Qa-8lF"/>
+        <segue reference="Irl-wv-ZbJ"/>
     </inferredMetricsTieBreakers>
 </document>
