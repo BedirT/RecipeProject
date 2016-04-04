@@ -171,7 +171,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     var myMatchedArray : Array<Dictionary<String,Any>> = []
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let matchesPage = segue.destinationViewController as? matchesPageViewController {
+        if ((segue.destinationViewController as? matchesPageViewController) != nil) {
             let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
             
             for var i = 0, a = 0 ; i < data(0).2 ; i++ {
