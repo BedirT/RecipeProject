@@ -149,6 +149,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         cell.labelInCell.text = tableData[indexPath.row]//data.myFunc().myset[indexPath.row]
         cell.checkBoxInCell.tag = indexPath.row
         cell.checkBoxInCell.addTarget(self, action: Selector("yourCheckBoxClicked:"), forControlEvents: .TouchUpInside)
+        cell.checkBoxInCell.isChecked = choosenSet.contains(tableData[indexPath.row])
         
         // cell.images.image = UIImage(named: tableData[indexPath.row])
         // if images name is same as in tableData put it in front of label

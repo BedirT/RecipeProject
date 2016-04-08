@@ -11,7 +11,7 @@ import UIKit
 class TblCell: UITableViewCell {
 
     
-    @IBOutlet weak var checkBoxInCell: UIButton!
+    @IBOutlet weak var checkBoxInCell: checkBox!
     @IBOutlet weak var labelInCell: UILabel!
     
     override func awakeFromNib() {
