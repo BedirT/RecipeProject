@@ -148,7 +148,7 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
         let cell: TblCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as! TblCell
         cell.labelInCell.text = tableData[indexPath.row]//data.myFunc().myset[indexPath.row]
         cell.checkBoxInCell.tag = indexPath.row
-        cell.checkBoxInCell.addTarget(self, action: Selector("yourCheckBoxClicked:"), forControlEvents: .TouchUpInside)
+        cell.checkBoxInCell.addTarget(self, action: #selector(ingredientsPage.yourCheckBoxClicked(_:)), forControlEvents: .TouchUpInside)
         cell.checkBoxInCell.isChecked = choosenSet.contains(tableData[indexPath.row])
         
         // cell.images.image = UIImage(named: tableData[indexPath.row])
@@ -174,16 +174,22 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if ((segue.destinationViewController as? matchesPageViewController) != nil) {
             let matchesPage: matchesPageViewController = segue.destinationViewController as! matchesPageViewController
-            
-            for var i = 0, a = 0 ; i < data(0).2 ; i++ {
-                
+            var a = 0
+            for i in 0 ..< data(0).2{
                 if data(i).0.isSubsetOf(choosenSet) == true {
                     self.myMatchedArray.insert(self.data(i).1, atIndex: a)
-                    a++
+                    a += 1
                 }
             }
+//            for var i = 0, a = 0 ; i < data(0).2 ; i += 1 {
+//                
+//                if data(i).0.isSubsetOf(choosenSet) == true {
+//                    self.myMatchedArray.insert(self.data(i).1, atIndex: a)
+//                    a += 1
+//                }
+//            }
             
-            for var i = 0 ; i < myMatchedArray.count ; i++ {
+            for i in 0  ..< myMatchedArray.count  {
                 //print(myMatchedArray[i])
                 matchesPage.dataArray.append(myMatchedArray[i])
             }
