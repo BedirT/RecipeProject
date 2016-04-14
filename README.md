@@ -1,7 +1,7 @@
 # RecipeProject
 iOS application
 
----MOBDEVL---
+iDevLab 2015-2016
 
 As North American University Mobile Developement Lab
 we started this project. We are improving our application
