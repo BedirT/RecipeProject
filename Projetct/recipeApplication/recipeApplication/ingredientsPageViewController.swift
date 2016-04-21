@@ -120,11 +120,17 @@ class ingredientsPage: UIViewController, UITableViewDataSource, UITableViewDeleg
     ////////////////////////////////    ////////////////////////////////
     ////////////////////////////////    ////////////////////////////////
     
+    var searchController: UISearchController!
+    
     let tableData : [String] = ["Rice","Butter","Salmon","Egg","Eggplant","Onion","Garlic","Lemonjuice","Parsley","Chocolate" ,"Vanilla","Flour","Lettuce","Spinach", "Leaf","Cucumber", "Tomato", "Potato","Egg yolk","Egg white","Steak", "Vegetable oil"]
     
     // let data = Data().myFunc()
     
     var choosenSet : Set<String> = []
+    
+    func configureSearchController() {
+        searchController = UISearchController(searchResultsController: nil)
+    }
     
     override func viewDidLoad() {
         

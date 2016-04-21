@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F82418DD1BEBD8D9001D03A9 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82418DC1BEBD8D9001D03A9 /* data.swift */; };
+		F879CD4E1CC7CED200FBB215 /* ingredients.txt in Resources */ = {isa = PBXBuildFile; fileRef = F879CD4D1CC7CED200FBB215 /* ingredients.txt */; };
 		F8928D7C1C035CED005E120E /* ingredientsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */; };
 		F8928D7E1C035E9F005E120E /* vwTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8928D7D1C035E9F005E120E /* vwTblCell.xib */; };
 		F8928D801C035EEA005E120E /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8928D7F1C035EEA005E120E /* TblCell.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		F82418DC1BEBD8D9001D03A9 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		F879CD4D1CC7CED200FBB215 /* ingredients.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingredients.txt; sourceTree = SOURCE_ROOT; };
 		F8928D7B1C035CED005E120E /* ingredientsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientsPageViewController.swift; sourceTree = "<group>"; };
 		F8928D7D1C035E9F005E120E /* vwTblCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTblCell.xib; sourceTree = "<group>"; };
 		F8928D7F1C035EEA005E120E /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblCell.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D6AEAB1BDEA9F600FF7165 /* AppDelegate.swift */,
+				F879CD4D1CC7CED200FBB215 /* ingredients.txt */,
 				F8928D871C064AF1005E120E /* Visual */,
 				F8928D851C064AC3005E120E /* New Group */,
 				F8928D861C064ADB005E120E /* datas */,
@@ -298,6 +301,7 @@
 				F8D6AEB61BDEA9F600FF7165 /* LaunchScreen.storyboard in Resources */,
 				F8928D7E1C035E9F005E120E /* vwTblCell.xib in Resources */,
 				F8D6AEB31BDEA9F600FF7165 /* Assets.xcassets in Resources */,
+				F879CD4E1CC7CED200FBB215 /* ingredients.txt in Resources */,
 				F8928D841C0649B1005E120E /* vwTblCellForMatches.xib in Resources */,
 				F8D6AEB11BDEA9F600FF7165 /* Main.storyboard in Resources */,
 			);
